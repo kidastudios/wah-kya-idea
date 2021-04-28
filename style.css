@@ -494,6 +494,7 @@
         background-position: center;
         overflow-y: auto;
         background-color: transparent;
+        visibility: hidden;
     }
     /*
     .g-content {
