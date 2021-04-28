@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>File_Upload</title>
+
+    <style media="screen">
+        #custom-file {
+            color: white;
+            padding: 10px;
+            background-color: #009578;
+            border: 1px solid #000;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        #custom-file:hover {
+            background-color: #ee5164;
+        }
+        
+        #custom-text {
+            margin-left: 10px;
+            font-family: sans-serif;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="file" id="real-file" hidden="hidden" />
+    <button type="button" id="custom-file">CHOOSE A FILE</button>
+    <span id="custom-text">File not uploaded</span>
+</body>
+<script>
+    var real_file = document.getElementById("real-file");
+    var custom_file = document.getElementById("custom-file");
+    var custom_text = document.getElementById("custom-text");
+
+    custom_file.addEventListener("click", function() {
+        real_file.click();
+    });
+
+    real_file.addEventListener("change", function() {
+        if (real_file.value) {
+            custom_text.innerHTML = real_file.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+        } else {
+            custom_text.innerHTML = "No file choosen yet";
+        }
+    });
+</script>
+
+</html>

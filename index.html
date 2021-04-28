@@ -1,0 +1,1403 @@
+<!doctype html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500&family=Questrial&family=Rubik&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <!-- Arimo; DM Sans 400,500,700; Inter 400,500,600;Poppins 400;Questrial;Rubik, Work Sans;  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Green Audio Player>-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
+
+    <title>Form Submission</title>
+</head>
+
+<body>
+    <!-- Left Side for Chat page-->
+    <div class="leftside">
+        <div class="search">
+            <input id="filter" type="text" placeholder="Type here to search">
+            <script>
+                $("#filter").keyup(function() {
+
+                    // Retrieve the input field text and reset the count to zero
+                    var filter = $(this).val(),
+                        count = 0;
+
+                    // Loop through the comment list
+                    $('#chat_box div').each(function() {
+
+                        // If the list item does not contain the text phrase fade it out
+                        if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                            $(this).hide(); // MY CHANGE
+
+                            // Show the list item if the phrase matches and increase the count by 1
+                        } else {
+                            $(this).show(); // MY CHANGE
+                            count++;
+                        }
+
+                    });
+
+                });
+            </script>
+        </div>
+        <div class="chat_box" id="chat_box">
+            <div class="box" id="box1">
+                <div class="profile_pic">
+                    <i class="bi bi-controller">
+                
+                    </i>
+                    <!--<img src="Images/Games.jpeg" alt="" class="profile-image rounded-circle">-->
+                </div>
+                <div class="topic1_name">Games</div>
+                <div class="messageCount" id="messageCount">
+                    <p>3</p>
+                </div>
+            </div>
+
+            <div class="box" id="box2">
+                <div class="profile_pic">
+                    <i class="bi bi-film">
+
+                    </i>
+                    <!--<img src="Images/Movies.jpeg" alt="" class="profile-image rounded-circle">-->
+                </div>
+                <div class="topic1_name">
+                    Movies & Shows
+                </div>
+                <div class="messageCount" id="messageCount">
+                    3
+                </div>
+            </div>
+
+            <div class="box" id="box3">
+                <div class="profile_pic">
+                    <i class="bi bi-music-note-list">
+
+                    </i>
+                    <!--<img src="Images/Music.jpeg" alt="" class="profile-image rounded-circle">-->
+                </div>
+                <div class="topic1_name">
+                    Music
+                </div>
+                <div class="messageCount" id="messageCount">
+                    1
+                </div>
+            </div>
+
+            <div class="box" id="box8">
+                <div class="profile_pic">
+                    <i class="bi bi-cpu-fill">
+
+                    </i>
+                    <!--<img src="Images/Miscelleneous.jpeg" alt="" class="profile-image rounded-circle">-->
+                </div>
+                <div class="topic1_name">
+                    Technology
+                </div>
+                <div class="messageCount" id="messageCount">
+                    1
+                </div>
+            </div>
+
+            <div class="box" id="box4">
+                <div class="profile_pic">
+                    <i class="bi bi-plug">
+
+                    </i>
+                    <!--<img src="Images/Appliances.jpeg" alt="" class="profile-image rounded-circle">-->
+                </div>
+                <div class="topic1_name">
+                    Appliances
+                </div>
+                <div class="messageCount" id="messageCount">
+                    1
+                </div>
+            </div>
+
+            <div class="box" id="box5">
+                <div class="profile_pic">
+                    <i class="bi bi-palette">
+
+                    </i>
+                    <!--<img src="Images/Art.jpeg" alt="" class="profile-image rounded-circle">-->
+                </div>
+                <div class="topic1_name">
+                Art
+                </div>
+                <div class="messageCount" id="messageCount">
+                1
+                </div>
+            </div>
+
+            <div class="box" id="box9">
+                <div class="profile_pic">
+                    <i class="bi bi-hammer">
+
+                    </i>
+                    <!--<img src="Images/Miscelleneous.jpeg" alt="" class="profile-image rounded-circle">-->
+                </div>
+                <div class="topic1_name">
+                    DIY & Crafts
+                </div>
+                <div class="messageCount" id="messageCount">
+                    1
+                </div>
+            </div>
+
+            <div class="box" id="box10">
+                <div class="profile_pic">
+                    <i class="bi bi-bag">
+
+                    </i>
+                    <!--<img src="Images/Miscelleneous.jpeg" alt="" class="profile-image rounded-circle">-->
+                </div>
+                <div class="topic1_name">
+                    Fashion
+                </div>
+                <div class="messageCount" id="messageCount">
+                    1
+                </div>
+            </div>
+
+            <div class="box" id="box6">
+                <div class="profile_pic">
+                    <i class="bi bi-camera-reels">
+
+                    </i>
+                    <!--<img src="Images/Movies.jpeg" alt="" class="profile-image rounded-circle">-->
+                </div>
+                <div class="topic1_name">
+                    Videos
+                </div>
+                <div class="messageCount" id="messageCount">
+                    1
+                </div>
+            </div>
+
+            <div class="box" id="box11">
+                <div class="profile_pic">
+                    <i class="bi bi-phone-landscape">
+
+                    </i>
+                    <!--<img src="Images/Miscelleneous.jpeg" alt="" class="profile-image rounded-circle">-->
+                </div>
+                <div class="topic1_name">
+                    Apps & Websites
+                </div>
+                <div class="messageCount" id="messageCount">
+                    1
+                </div>
+            </div>
+
+            <div class="box" id="box7">
+                <div class="profile_pic">
+                    <i class="bi bi-archive">
+
+                    </i>
+                    <!--<img src="Images/Miscelleneous.jpeg" alt="" class="profile-image rounded-circle">-->
+                </div>
+                <div class="topic1_name">Others</div>
+                <div class="messageCount" id="messageCount">1</div>
+            </div>
+        </div>
+    </div>
+    <!-- Right Side for Form_Sub-->
+    <div class="rightside">
+
+        <div class="MainPageInstructions" id="MainPageInstructions">
+            <img src="Images/start.png" />
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <video src="" class="video-content" id="vid01" controls autoplay></video>
+        </div>
+
+        <div class="topic1 gaming" id="1">
+            <div class="header">
+                <p>Games</p>
+            </div>
+            <div class="g-content" id="scrollControl">
+                <div class="backendChat" style="margin-top: 1.5%;">
+                    <p>
+                        Hey there!
+                    </p>
+                </div>
+                <div class="backendChat">
+                    <p>
+                        Send us a message about the type of game you would like to play. The game may be a combination of two or more games or something that already exists but you would like it in a different way.
+                    </p>
+                </div>
+                <div class="backendChat">
+                    <p>
+                        We accept all types of input:
+                        <b>text, images, audios, videos & documents</b>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="inputbar">
+
+                <button class="attach" id="attach">
+                    <span data-testid="clip" data-icon="clip" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+
+                <div id="upload" style="display:none;">
+
+                    <input class="pic-file" id="gaming" type="file" hidden="hidden" size="30" accept="image/jpg,image/png,image/jpeg,image/gif" />
+                    <p><button type="button" id="custom-picfile" class="custom-picfile" onclick="addImage('gaming')">
+                            <!--<span id="custom-pictext"></span> -->
+                            <i class="bi bi-image-fill"></i>
+                        </button></p>
+                    <input #fileInput type="file" class="real-file" id="gaming-file" hidden="hidden" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                    <p><button type="button" id="custom-file" class="custom-file" onclick="addDoc('gaming-file')" style="border: none;  border-radius: 50%">
+                        <span id="custom-text"></span>
+                        <i class="bi bi-file-earmark"></i>
+
+                        </button></p>
+                    <input #fileInput class="vid-file" id="g-video" type="file" hidden="hidden" size="30" accept="video/*" />
+                    <p><button type="button" id="custom-vidfile" class="custom-vidfile" onclick="addVideo('g')">
+                                <span id="custom-vidtext"></span>
+                                <i class="bi bi-camera-reels-fill"></i>
+                            </button></p>
+
+                    <input #fileInput class="aud-file" id="g-audio" type="file" hidden="hidden" size="30" accept="audio/*" />
+                    <p><button type="button" id="custom-audfile" class="custom-audfile" onclick="addAudio('g')" style="border: none; border-radius: 50% ">
+                                <span id="custom-audtext"></span>
+                                <i class="bi bi-music-note"></i>
+
+                            </button></p>
+                </div>
+
+                <!--<input type="text" name="msg" placeholder="Write message..." id="g-message">
+
+                <textarea rows="1" class="g-message" id="g-message" name="msg" placeholder="Write message..."></textarea>-->
+                <div class="container">
+                    <div id="w-input-container" onclick="setFocus()">
+                        <div class="w-input-text-group">
+                            <div id="w-input-text" contenteditable></div>
+                            <div class="w-placeholder">
+                                Type a message
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button type="submit" class="record" id="g-record" onclick="startRec('g')">
+                    <span data-testid="ptt" data-icon="ptt" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="stopRecord" id="g-stopRecord" onclick="stopRec('g')">
+                    <i class="bi bi-stop-circle" style="font-size: 30px;"></i>
+                </button>
+
+                <div id="g-volumeBar">
+                    <div id="g-voiceVolume"></div>
+                </div>
+                <button type="submit" class="send" id="g-send">
+                    <span data-testid="send" data-icon="send" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="topic1 movies" id="2">
+            <div class="header">
+                <p>Movies & Shows</p>
+            </div>
+            <div class="ms-content">
+                <div class="backendChat" style="margin-top: 1.5%;">
+                    <p>
+                        Hey there!
+                    </p>
+                </div>
+                <div class="backendChat">
+                    <p>
+                        Send us a message about the type of movies you would like to watch. The movie may be a of a particular genre or may be something you feel would be liked by the masses.
+                    </p>
+                </div>
+                <div class="backendChat">
+                    <p>
+                        We accept all types of input:
+                        <b>text, images, audios, videos & documents</b>.
+                    </p>
+                </div>
+            </div>
+            <div class="inputbar">
+
+                <button class="attach" id="attach">
+                    <span data-testid="clip" data-icon="clip" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <div id="upload" style="display:none;">
+
+                    <input class="pic-file1" id="movies" type="file" hidden="hidden" size="30" accept="image/jpg,image/png,image/jpeg,image/gif" />
+                    <p><button type="button" id="custom-picfile" class="custom-picfile" onclick="addImage('movies')" style="border: none; border-radius: 50% ">
+                            <span id="custom-pictext1"></span>
+                            <i class="bi bi-image-fill"></i>
+                        </button></p>
+
+                    <input #fileInput type="file" class="real-file1" id="movies-file" hidden="hidden" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                    <p><button type="button" id="custom-file" class="custom-file" onclick="addDoc('movies-file')" style="border: none;  border-radius: 50%">
+                        <i class="bi bi-file-earmark"></i>
+                    </button></p>
+
+                    <input #fileInput class="vid-file1" id="ms-video" type="file" hidden="hidden" size="30" accept="video/*" />
+                    <p><button type="button" id="custom-vidfile" class="custom-vidfile" onclick="addVideo('ms')" style="border: none; border-radius: 50%  ">
+                                <i class="bi bi-camera-reels-fill"></i>
+                            </button></p>
+
+                    <input #fileInput class="aud-file1" id="ms-audio" type="file" hidden="hidden" size="30" accept="audio/*" />
+                    <p><button type="button" id="custom-audfile" class="custom-audfile" onclick="addAudio('ms')" style="border: none; border-radius: 50% ">
+                            <i class="bi bi-music-note"></i>
+                            </button></p>
+                </div>
+                <!--<textarea class="ms-message" id="ms-message" name="msg" placeholder="Write message..."></textarea>-->
+                <div class="container">
+                    <div id="w-input-container" onclick="setFocus()">
+                        <div class="w-input-text-group">
+                            <div id="w-input-text" contenteditable></div>
+                            <div class="w-placeholder">
+                                Type a message
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="record" id="ms-record" onclick="startRec('ms')">
+                    <span data-testid="ptt" data-icon="ptt" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="stopRecord" id="ms-stopRecord" onclick="stopRec('ms')">
+                    <i class="bi bi-stop-circle" style="font-size: 30px;"></i>
+                </button>
+
+                <div id="ms-volumeBar">
+                    <div id="ms-voiceVolume"></div>
+                </div>
+                <button type="submit" class="send" id="ms-send">
+                    <span data-testid="send" data-icon="send" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="topic1 music" id="3">
+            <div class="header">
+                <p>Music</p>
+            </div>
+            <div class="m-content">
+                <div class="backendChat" style="margin-top: 1.5%;">
+                    <p>
+                        Hey there! Send us a message about the type of game you would like to play. The game may be a combination of two or more games or something that already exists but in a different way. We accept all types of input; <b>text, visual, audio or video</b>.
+                    </p>
+                </div>
+
+            </div>
+            <div class="inputbar">
+
+                <button type="submit" class="attach" id="attach">
+                    <span data-testid="clip" data-icon="clip" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <div id="upload" style="display:none;">
+
+                    <input class="pic-file2" id="music" type="file" hidden="hidden" size="30" accept="image/jpg,image/png,image/jpeg,image/gif" />
+                    <p><button type="button" id="custom-picfile" class="custom-picfile" onclick="addImage('music')" style="border: none; border-radius: 50% ">
+                        <i class="bi bi-image-fill"></i>
+                        </button></p>
+                    <input #fileInput type="file" class="real-file2" id="music-file" hidden="hidden" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                    <p><button type="button" id="custom-file" class="custom-file" onclick="addDoc('music-file')" style="border: none;  border-radius: 50%">
+                        <i class="bi bi-file-earmark"></i>
+                    </button></p>
+                    <input #fileInput class="vid-file2" id="m-video" type="file" hidden="hidden" size="30" accept="video/*" />
+                    <p><button type="button" id="custom-vidfile" class="custom-vidfile" onclick="addVideo('m')" style="border: none; border-radius: 50% ">
+                                <i class="bi bi-camera-reels-fill"></i>
+                            </button></p>
+
+                    <input #fileInput class="aud-file2" id="m-audio" type="file" hidden="hidden" size="30" accept="audio/*" />
+                    <p><button type="button" id="custom-audfile" class="custom-audfile" onclick="addAudio('m')" style="border: none; border-radius: 50% ">
+                                <i class="bi bi-music-note"></i>
+
+                            </button></p>
+                </div>
+                <!--<textarea class="m-message" id="m-message" name="msg" placeholder="Write message..."></textarea>-->
+                <div class="container">
+                    <div id="w-input-container" onclick="setFocus()">
+                        <div class="w-input-text-group">
+                            <div id="w-input-text" contenteditable></div>
+                            <div class="w-placeholder">
+                                Type a message
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="record" id="m-record" onclick="startRec('m')">
+                    <span data-testid="ptt" data-icon="ptt" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="stopRecord" id="m-stopRecord" onclick="stopRec('m')">
+                    <i class="bi bi-stop-circle" style="font-size: 30px;"></i>
+                </button>
+
+                <div id="m-volumeBar">
+                    <div id="m-voiceVolume"></div>
+                </div>
+                <button type="submit" class="send" id="m-send">
+                    <span data-testid="send" data-icon="send" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="topic1 appliances" id="4">
+            <div class="header">
+                <p>Appliances</p>
+            </div>
+            <div class="a-content">
+                <div class="backendChat" style="margin-top: 1.5%;">
+                    <p>
+                        Hey there! Send us a message about the type of game you would like to play. The game may be a combination of two or more games or something that already exists but in a different way. We accept all types of input; <b>text, visual, audio or video</b>.
+                    </p>
+                </div>
+
+            </div>
+            <div class="inputbar">
+
+                <button type="submit" class="attach" id="attach">
+                    <span data-testid="clip" data-icon="clip" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <div id="upload" style="display:none;">
+
+                    <input class="pic-file3" id="appliances" type="file" hidden="hidden" size="30" accept="image/jpg,image/png,image/jpeg,image/gif" />
+                    <p><button type="button" id="custom-picfile" class="custom-picfile" onclick="addImage('appliances')" style="border: none; border-radius: 50% ">
+                            <i class="bi bi-image-fill"></i>
+                        </button></p>
+                    <input #fileInput type="file" class="real-file3" id="appliances-file" hidden="hidden" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                    <p><button type="button" id="custom-file" class="custom-file" onclick="addDoc('appliances-file')" style="border: none;  border-radius: 50%">
+                        <i class="bi bi-file-earmark"></i>
+                    </button></p>
+                    <input #fileInput class="vid-file3" id="a-video" type="file" hidden="hidden" size="30" accept="video/*" />
+                    <p><button type="button" id="custom-vidfile" class="custom-vidfile" onclick="addVideo('a')" style="border: none; border-radius: 50% ">
+                                <i class="bi bi-camera-reels-fill"></i>
+                            </button></p>
+
+                    <input #fileInput class="aud-file3" id="a-audio" type="file" hidden="hidden" size="30" accept="audio/*" />
+                    <p><button type="button" id="custom-audfile" class="custom-audfile" onclick="addAudio('a')" style="border: none; border-radius: 50% ">
+                                 <i class="bi bi-music-note"></i>
+
+                            </button></p>
+                </div>
+                <!--<textarea class="a-message" id="a-message" name="msg" placeholder="Write message..."></textarea>-->
+                <div class="container">
+                    <div id="w-input-container" onclick="setFocus()">
+                        <div class="w-input-text-group">
+                            <div id="w-input-text" contenteditable></div>
+                            <div class="w-placeholder">
+                                Type a message
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="record" id="a-record" onclick="startRec('a')">
+                    <span data-testid="ptt" data-icon="ptt" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="stopRecord" id="a-stopRecord" onclick="stopRec('a')">
+                    <i class="bi bi-stop-circle" style="font-size: 30px;"></i>
+                </button>
+
+                <div id="a-volumeBar">
+                    <div id="a-voiceVolume"></div>
+                </div>
+                <button type="submit" class="send" id="a-send">
+                    <span data-testid="send" data-icon="send" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="topic1 art" id="5">
+            <div class="header">
+                <p>Art</p>
+            </div>
+            <div class="ac-content">
+                <div class="backendChat" style="margin-top: 1.5%;">
+                    <p>
+                        Hey there! Send us a message about the type of game you would like to play. The game may be a combination of two or more games or something that already exists but in a different way. We accept all types of input; <b>text, visual, audio or video</b>.
+                    </p>
+                </div>
+
+            </div>
+            <div class="inputbar">
+
+                <button type="submit" class="attach" id="attach">
+                    <span data-testid="clip" data-icon="clip" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <div id="upload" style="display:none;">
+
+                    <input class="pic-file4" id="art" type="file" hidden="hidden" size="30" accept="image/jpg,image/png,image/jpeg,image/gif" />
+                    <p><button type="button" id="custom-picfile" class="custom-picfile" onclick="addImage('art')" style="border: none; border-radius: 50% ">
+                             <i class="bi bi-image-fill"></i>
+                        </button></p>
+                    <input #fileInput type="file" class="real-file4" id="art-file" hidden="hidden" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                    <p><button type="button" id="custom-file" class="custom-file" onclick="addDoc('art-file')" style="border: none;  border-radius: 50%">
+                        <i class="bi bi-file-earmark"></i>
+                    </button></p>
+                    <input #fileInput class="vid-file4" id="ac-video" type="file" hidden="hidden" size="30" accept="video/*" />
+                    <p><button type="button" id="custom-vidfile" class="custom-vidfile" onclick="addVideo('ac')" style="border: none; border-radius: 50% ">
+                            <i class="bi bi-camera-reels-fill"></i>
+
+                            </button></p>
+
+                    <input #fileInput class="aud-file4" id="ac-audio" type="file" hidden="hidden" size="30" accept="audio/*" />
+                    <p><button type="button" id="custom-audfile" class="custom-audfile" onclick="addAudio('ac')" style="border: none; border-radius: 50% ">
+                                <i class="bi bi-music-note"></i>
+
+                            </button></p>
+                </div>
+                <!--<textarea class="ac-message" id="ac-message" name="msg" placeholder="Write message..."></textarea>-->
+                <div class="container">
+                    <div id="w-input-container" onclick="setFocus()">
+                        <div class="w-input-text-group">
+                            <div id="w-input-text" contenteditable></div>
+                            <div class="w-placeholder">
+                                Type a message
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="record" id="ac-record" onclick="startRec('ac')">
+                    <span data-testid="ptt" data-icon="ptt" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="stopRecord" id="ac-stopRecord" onclick="stopRec('ac')">
+                    <i class="bi bi-stop-circle" style="font-size: 30px;"></i>
+                </button>
+
+                <div id="ac-volumeBar">
+                    <div id="ac-voiceVolume"></div>
+                </div>
+                <button type="submit" class="send" id="ac-send">
+                    <span data-testid="send" data-icon="send" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="topic1 videos" id="6">
+            <div class="header">
+                <p>Videos</p>
+            </div>
+            <div class="v-content">
+                <div class="backendChat" style="margin-top: 1.5%;">
+                    <p>
+                        Hey there! Send us a message about the type of game you would like to play. The game may be a combination of two or more games or something that already exists but in a different way. We accept all types of input; <b>text, visual, audio or video</b>.
+                    </p>
+                </div>
+
+            </div>
+            <div class="inputbar">
+
+                <button type="submit" class="attach" id="attach">
+                    <span data-testid="clip" data-icon="clip" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <div id="upload" style="display:none;">
+
+                    <input class="pic-file5" id="videos" type="file" hidden="hidden" size="30" accept="image/jpg,image/png,image/jpeg,image/gif" />
+                    <p><button type="button" id="custom-picfile" class="custom-picfile" onclick="addImage('videos')" style="border: none; border-radius: 50% ">
+                            <i class="bi bi-image-fill"></i>
+                        </button></p>
+                    <input #fileInput type="file" class="real-file5" id="videos-file" hidden="hidden" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                    <p><button type="button" id="custom-file" class="custom-file" onclick="addDoc('videos-file')" style="border: none;  border-radius: 50%">
+                        <i class="bi bi-file-earmark"></i>
+                    </button></p>
+                    <input #fileInput class="vid-file5" id="v-video" type="file" hidden="hidden" size="30" accept="video/*" />
+                    <p><button type="button" id="custom-vidfile" class="custom-vidfile" onclick="addVideo('v')" style="border: none; border-radius: 50% ">
+                                <i class="bi bi-camera-reels-fill"></i>
+                            </button></p>
+
+                    <input #fileInput class="aud-file5" id="v-audio" type="file" hidden="hidden" size="30" accept="audio/*" />
+                    <p><button type="button" id="custom-audfile" class="custom-audfile" onclick="addAudio('v')" style="border: none; border-radius: 50% ">
+                            <i class="bi bi-music-note"></i>
+
+                            </button></p>
+                </div>
+                <!--<textarea class="v-message" id="v-message" name="msg" placeholder="Write message..."></textarea>-->
+                <div class="container">
+                    <div id="w-input-container" onclick="setFocus()">
+                        <div class="w-input-text-group">
+                            <div id="w-input-text" contenteditable></div>
+                            <div class="w-placeholder">
+                                Type a message
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="record" id="v-record" onclick="startRec('v')">
+                    <span data-testid="ptt" data-icon="ptt" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="stopRecord" id="v-stopRecord" onclick="stopRec('v')">
+                    <i class="bi bi-stop-circle" style="font-size: 30px;"></i>
+                </button>
+
+                <div id="v-volumeBar">
+                    <div id="v-voiceVolume"></div>
+                </div>
+                <button type="submit" class="send" id="v-send">
+                    <span data-testid="send" data-icon="send" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="topic1 others" id="7">
+            <div class="header">
+                <p>Others</p>
+            </div>
+            <div class="o-content">
+                <div class="backendChat" style="margin-top: 1.5%;">
+                    <p>
+                        Hey there! Send us a message about the type of game you would like to play. The game may be a combination of two or more games or something that already exists but in a different way. We accept all types of input; <b>text, visual, audio or video</b>.
+                        - </p>
+                </div>
+            </div>
+            <div class="inputbar">
+
+                <button type="submit" class="attach" id="attach">
+                    <span data-testid="clip" data-icon="clip" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <div id="upload" style="display:none;">
+
+                    <input class="pic-file6" id="others" type="file" hidden="hidden" size="30" accept="image/jpg,image/png,image/jpeg,image/gif" />
+                    <p><button type="button" id="custom-picfile" class="custom-picfile" onclick="addImage('others')" style="border: none; border-radius: 50% ">
+                            <i class="bi bi-image-fill"></i>
+                        </button></p>
+                    <input #fileInput type="file" class="real-file6" id="others-file" hidden="hidden" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                    <p><button type="button" id="custom-file" class="custom-file" onclick="addDoc('others-file')" style="border: none;  border-radius: 50%">
+                        <i class="bi bi-file-earmark"></i>
+                    </button></p>
+                    <input #fileInput class="vid-file6" id="o-video" type="file" hidden="hidden" size="30" accept="video/*" />
+                    <p><button type="button" id="custom-vidfile" class="custom-vidfile" onclick="addVideo('o')" style="border: none; border-radius: 50% ">
+                                <i class="bi bi-camera-reels-fill"></i>
+                            </button></p>
+
+                    <input #fileInput class="aud-file6" id="o-audio" type="file" hidden="hidden" size="30" accept="audio/*" />
+                    <p><button type="button" id="custom-audfile" class="custom-audfile" onclick="addAudio('o')" style="border: none; border-radius: 50% ">
+                                <i class="bi bi-music-note"></i>
+                            </button></p>
+                </div>
+                <!--<textarea class="o-message" id="o-message" name="msg" placeholder="Write message..."></textarea>-->
+                <div class="container">
+                    <div id="w-input-container" onclick="setFocus()">
+                        <div class="w-input-text-group">
+                            <div id="w-input-text" contenteditable></div>
+                            <div class="w-placeholder">
+                                Type a message
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="record" id="o-record" onclick="startRec('o')">
+                    <span data-testid="ptt" data-icon="ptt" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="stopRecord" id="o-stopRecord" onclick="stopRec('o')">
+                    <i class="bi bi-stop-circle" style="font-size: 30px;"></i>
+                </button>
+
+                <div id="o-volumeBar">
+                    <div id="o-voiceVolume"></div>
+                </div>
+                <button type="submit" class="send" id="o-send">
+                    <span data-testid="send" data-icon="send" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="topic1 technology" id="8">
+            <div class="header">
+                <p>Technology</p>
+            </div>
+            <div class="tech-content">
+                <div class="backendChat" style="margin-top: 1.5%;">
+                    <p>
+                        Hey there! Send us a message about the type of game you would like to play. The game may be a combination of two or more games or something that already exists but in a different way. We accept all types of input; <b>text, visual, audio or video</b>.
+                    </p>
+                </div>
+
+            </div>
+            <div class="inputbar">
+
+                <button type="submit" class="attach" id="attach">
+                    <span data-testid="clip" data-icon="clip" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <div id="upload" style="display:none;">
+
+                    <input class="pic-file3" id="technology" type="file" hidden="hidden" size="30" accept="image/jpg,image/png,image/jpeg,image/gif" />
+                    <p><button type="button" id="custom-picfile" class="custom-picfile" onclick="addImage('technology')" style="border: none; border-radius: 50% ">
+                            <i class="bi bi-image-fill"></i>
+                        </button></p>
+                    <input #fileInput type="file" class="real-file3" id="technology-file" hidden="hidden" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                    <p><button type="button" id="custom-file" class="custom-file" onclick="addDoc('technology-file')" style="border: none;  border-radius: 50%">
+                        <i class="bi bi-file-earmark"></i>
+                    </button></p>
+                    <input #fileInput class="vid-file3" id="tech-video" type="file" hidden="hidden" size="30" accept="video/*" />
+                    <p><button type="button" id="custom-vidfile" class="custom-vidfile" onclick="addVideo('tech')" style="border: none; border-radius: 50% ">
+                                <i class="bi bi-camera-reels-fill"></i>
+                            </button></p>
+
+                    <input #fileInput class="aud-file3" id="tech-audio" type="file" hidden="hidden" size="30" accept="audio/*" />
+                    <p><button type="button" id="custom-audfile" class="custom-audfile" onclick="addAudio('tech')" style="border: none; border-radius: 50% ">
+                                 <i class="bi bi-music-note"></i>
+
+                            </button></p>
+                </div>
+                <!--<textarea class="a-message" id="a-message" name="msg" placeholder="Write message..."></textarea>-->
+                <div class="container">
+                    <div id="w-input-container" onclick="setFocus()">
+                        <div class="w-input-text-group">
+                            <div id="w-input-text" contenteditable></div>
+                            <div class="w-placeholder">
+                                Type a message
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="record" id="technology-record" onclick="startRec('technology')">
+                    <span data-testid="ptt" data-icon="ptt" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="stopRecord" id="technology-stopRecord" onclick="stopRec('technology')">
+                    <i class="bi bi-stop-circle" style="font-size: 30px;"></i>
+                </button>
+
+                <div id="tech-volumeBar">
+                    <div id="tech-voiceVolume"></div>
+                </div>
+
+                <button type="submit" class="send" id="technology-send">
+                    <span data-testid="send" data-icon="send" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="topic1 diy-crafts" id="9">
+            <div class="header">
+                <p>DIY & Crafts</p>
+            </div>
+            <div class="diy-crafts-content">
+                <div class="backendChat" style="margin-top: 1.5%;">
+                    <p>
+                        Hey there! Send us a message about the type of game you would like to play. The game may be a combination of two or more games or something that already exists but in a different way. We accept all types of input; <b>text, visual, audio or video</b>.
+                    </p>
+                </div>
+            </div>
+            <div class="inputbar">
+
+                <button type="submit" class="attach" id="attach">
+                    <span data-testid="clip" data-icon="clip" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <div id="upload" style="display:none;">
+
+                    <input class="pic-file4" id="diy-crafts" type="file" hidden="hidden" size="30" accept="image/jpg,image/png,image/jpeg,image/gif" />
+                    <p><button type="button" id="custom-picfile" class="custom-picfile" onclick="addImage('diy-crafts')" style="border: none; border-radius: 50% ">
+                             <i class="bi bi-image-fill"></i>
+                        </button></p>
+                    <input #fileInput type="file" class="real-file4" id="diy-crafts-file" hidden="hidden" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                    <p><button type="button" id="custom-file" class="custom-file" onclick="addDoc('diy-crafts-file')" style="border: none;  border-radius: 50%">
+                        <i class="bi bi-file-earmark"></i>
+                    </button></p>
+                    <input #fileInput class="vid-file4" id="diy-crafts-video" type="file" hidden="hidden" size="30" accept="video/*" />
+                    <p><button type="button" id="custom-vidfile" class="custom-vidfile" onclick="addVideo('diy-crafts')" style="border: none; border-radius: 50% ">
+                            <i class="bi bi-camera-reels-fill"></i>
+
+                            </button></p>
+
+                    <input #fileInput class="aud-file4" id="diy-crafts-audio" type="file" hidden="hidden" size="30" accept="audio/*" />
+                    <p><button type="button" id="custom-audfile" class="custom-audfile" onclick="addAudio('diy-crafts')" style="border: none; border-radius: 50% ">
+                                <i class="bi bi-music-note"></i>
+
+                            </button></p>
+                </div>
+                <!--<textarea class="ac-message" id="ac-message" name="msg" placeholder="Write message..."></textarea>-->
+                <div class="container">
+                    <div id="w-input-container" onclick="setFocus()">
+                        <div class="w-input-text-group">
+                            <div id="w-input-text" contenteditable></div>
+                            <div class="w-placeholder">
+                                Type a message
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="record" id="diy-crafts-record" onclick="startRec('diy-crafts')">
+                    <span data-testid="ptt" data-icon="ptt" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="stopRecord" id="diy-crafts-stopRecord" onclick="stopRec('diy-crafts')">
+                    <i class="bi bi-stop-circle" style="font-size: 30px;"></i>
+                </button>
+
+                <div id="ac-volumeBar">
+                    <div id="ac-voiceVolume"></div>
+                </div>
+                <button type="submit" class="send" id="diy-crafts-send">
+                    <span data-testid="send" data-icon="send" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="topic1 fashion" id="10">
+            <div class="header">
+                <p>Fashion</p>
+            </div>
+            <div class="fashion-content">
+                <div class="backendChat" style="margin-top: 1.5%;">
+                    <p>
+                        Hey there! Send us a message about the type of game you would like to play. The game may be a combination of two or more games or something that already exists but in a different way. We accept all types of input; <b>text, visual, audio or video</b>.
+                    </p>
+                </div>
+
+            </div>
+            <div class="inputbar">
+
+                <button type="submit" class="attach" id="attach">
+                    <span data-testid="clip" data-icon="clip" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <div id="upload" style="display:none;">
+
+                    <input class="pic-file5" id="fashion" type="file" hidden="hidden" size="30" accept="image/jpg,image/png,image/jpeg,image/gif" />
+                    <p><button type="button" id="custom-picfile" class="custom-picfile" onclick="addImage('fashion')" style="border: none; border-radius: 50% ">
+                            <i class="bi bi-image-fill"></i>
+                        </button></p>
+                    <input #fileInput type="file" class="real-file5" id="fashion-file" hidden="hidden" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                    <p><button type="button" id="custom-file" class="custom-file" onclick="addDoc('fashion-file')" style="border: none;  border-radius: 50%">
+                        <i class="bi bi-file-earmark"></i>
+                    </button></p>
+                    <input #fileInput class="vid-file5" id="fashion-video" type="file" hidden="hidden" size="30" accept="video/*" />
+                    <p><button type="button" id="custom-vidfile" class="custom-vidfile" onclick="addVideo('fashion')" style="border: none; border-radius: 50% ">
+                                <i class="bi bi-camera-reels-fill"></i>
+                            </button></p>
+
+                    <input #fileInput class="aud-file5" id="fashion-audio" type="file" hidden="hidden" size="30" accept="audio/*" />
+                    <p><button type="button" id="custom-audfile" class="custom-audfile" onclick="addAudio('fashion')" style="border: none; border-radius: 50% ">
+                            <i class="bi bi-music-note"></i>
+
+                            </button></p>
+                </div>
+                <!--<textarea class="v-message" id="v-message" name="msg" placeholder="Write message..."></textarea>-->
+                <div class="container">
+                    <div id="w-input-container" onclick="setFocus()">
+                        <div class="w-input-text-group">
+                            <div id="w-input-text" contenteditable></div>
+                            <div class="w-placeholder">
+                                Type a message
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="record" id="fashion-record" onclick="startRec('fashion')">
+                    <span data-testid="ptt" data-icon="ptt" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="stopRecord" id="fashion-stopRecord" onclick="stopRec('fashion')">
+                    <i class="bi bi-stop-circle" style="font-size: 30px;"></i>
+                </button>
+
+                <div id="fashion-volumeBar">
+                    <div id="fashion-voiceVolume"></div>
+                </div>
+                <button type="submit" class="send" id="fashion-send">
+                    <span data-testid="send" data-icon="send" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="topic1 apps-websites" id="11">
+            <div class="header">
+                <p>Apps & Websites</p>
+            </div>
+            <div class="apps-websites-content">
+                <div class="backendChat" style="margin-top: 1.5%;">
+                    <p>
+                        Hey there! Send us a message about the type of game you would like to play. The game may be a combination of two or more games or something that already exists but in a different way. We accept all types of input; <b>text, visual, audio or video</b>.
+                        - </p>
+                </div>
+
+            </div>
+            <div class="inputbar">
+
+                <button type="submit" class="attach" id="attach">
+                    <span data-testid="clip" data-icon="clip" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <div id="upload" style="display:none;">
+
+                    <input class="pic-file6" id="apps-websites" type="file" hidden="hidden" size="30" accept="image/jpg,image/png,image/jpeg,image/gif" />
+                    <p><button type="button" id="custom-picfile" class="custom-picfile" onclick="addImage('apps-websites')" style="border: none; border-radius: 50% ">
+                            <i class="bi bi-image-fill"></i>
+                        </button></p>
+                    <input #fileInput type="file" class="real-file6" id="apps-websites-file" hidden="hidden" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                    <p><button type="button" id="custom-file" class="custom-file" onclick="addDoc('apps-websites-file')" style="border: none;  border-radius: 50%">
+                        <i class="bi bi-file-earmark"></i>
+                    </button></p>
+                    <input #fileInput class="vid-file6" id="apps-websites-video" type="file" hidden="hidden" size="30" accept="video/*" />
+                    <p><button type="button" id="custom-vidfile" class="custom-vidfile" onclick="addVideo('apps-websites')" style="border: none; border-radius: 50% ">
+                                <i class="bi bi-camera-reels-fill"></i>
+                            </button></p>
+
+                    <input #fileInput class="aud-file6" id="apps-websites-audio" type="file" hidden="hidden" size="30" accept="audio/*" />
+                    <p><button type="button" id="custom-audfile" class="custom-audfile" onclick="addAudio('apps-websites')" style="border: none; border-radius: 50% ">
+                                <i class="bi bi-music-note"></i>
+                            </button></p>
+                </div>
+                <!--<textarea class="o-message" id="o-message" name="msg" placeholder="Write message..."></textarea>-->
+                <div class="container">
+                    <div id="w-input-container" onclick="setFocus()">
+                        <div class="w-input-text-group">
+                            <div id="w-input-text" contenteditable></div>
+                            <div class="w-placeholder">
+                                Type a message
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="record" id="apps-websites-record" onclick="startRec('apps-websites')">
+                    <span data-testid="ptt" data-icon="ptt" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button class="stopRecord" id="apps-websites-stopRecord" onclick="stopRec('apps-websites')">
+                    <i class="bi bi-stop-circle" style="font-size: 30px;"></i>
+                </button>
+
+                <div id="apps-websites-volumeBar">
+                    <div id="apps-websites-voiceVolume"></div>
+                </div>
+                <button type="submit" class="send" id="apps-websites-send">
+                    <span data-testid="send" data-icon="send" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+    <!--Total Left-->
+    <div class="leftsidebar">
+        <div class="app-store logo-div" id="app-store">
+            <img src="Images/App-Store-Logo.png">
+        </div>
+
+        <div class="play-store logo-div" id="play-store">
+            <img src="Images/google-play-store-logo.png">
+        </div>
+
+        <!--<div><i class="bi bi-chat-quote"></i><i class="bi bi-chat-quote-fill"></i></div>
+        <div><i class="bi bi-info-circle"></i><i class="bi bi-info-circle-fill"></i></div>
+        <div><i class="bi bi-gear"></i><i class="bi bi-gear-fill"></i></div>-->
+    </div>
+
+</body>
+
+<script>
+    function setFocus() {
+        document.getElementById('w-input-text').focus();
+    }
+</script>
+
+<script>
+    var header = document.getElementById("chat_box");
+    var btns = header.getElementsByClassName("box");
+    //console.log(btns.length);
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("box");
+            for (var j = 0; j < current.length; j++) {
+                current[j].className = current[j].className.replace(" active", "");
+            }
+            // current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
+<script>
+    function onClick(element) {
+        var modal = document.getElementById("myModal");
+        var img = element; //document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<script src="Y2hhdEJ1dHRvbg.js"></script>
+<script src="c2VuZE1lc3NhZ2U.js"></script>
+<script src="XVkaW9SZWNvcmQ.js"></script>
+<script src="Attach.js"></script>
+<script src="attachtocontent.js" type="text/javascript"></script>
+<script src="volume-meter-master/volume-meter.js"></script>
+<script src="green-audio-player-master/dist/js/green-audio-player.min.js"></script>
+<link rel="stylesheet" type="text/css" href="green-audio-player-master/dist/css/green-audio-player.min.css">
+
+<script>
+    var audioChunks;
+
+    var meter = null;
+    var WIDTH = 500;
+    var recordingStarted = false;
+
+    function startRec(tag) {
+        document.getElementById(tag + "-record").style.visibility = "hidden";
+        //document.getElementById(tag + "-volumeBar").style.visibility = "visible";
+        document.getElementById(tag + "-stopRecord").style.visibility = "visible";
+        collectRecording(tag);
+    }
+
+    function collectRecording(tag) {
+        // This will prompt for permission if not allowed earlier
+        navigator.mediaDevices.getUserMedia({
+                audio: true
+            })
+            .then(stream => {
+
+                /*    navigator.getUserMedia({
+                        audio: true },
+                     startUserMedia, function(e) {
+                        __log('No live audio input: ' + e);
+                    });
+                    recordingStarted = true;*/
+
+                audioChunks = [];
+                rec = new MediaRecorder(stream);
+                rec.ondataavailable = e => {
+                    audioChunks.push(e.data);
+                    if (rec.state == "inactive") {
+                        let blob = new Blob(audioChunks, {
+                            type: 'audio/x-mpeg-3'
+                        });
+                        addRec(blob, tag);
+                        /*
+                        document.getElementById("g-recordedAudio").src = URL.createObjectURL(blob);
+                        document.getElementById("g-recordedAudio").controls = true;
+                        document.getElementById("g-recordedAudio").autoplay = true;
+
+                        document.getElementById("g-recordedAudio").classList.add("userMessage");
+                        */
+                    }
+                }
+                rec.start();
+            })
+            .catch(e => console.log(e));
+    }
+
+    function stopRec(tag) {
+        document.getElementById(tag + "-record").style.visibility = "visible";
+        //document.getElementById(tag + "-volumeBar").style.visibility = "hidden";
+        document.getElementById(tag + "-stopRecord").style.visibility = "hidden";
+        recordingStarted = false;
+        try {
+            rec.stop();
+        } catch (err) {
+            console.log(err)
+        };
+    };
+
+    // initialize SpeechRecognition object
+    let recognition = new webkitSpeechRecognition();
+    recognition.maxAlternatives = 1;
+    recognition.continuous = true;
+
+    function startUserMedia(stream) {
+        const ctx = new AudioContext();
+        const analyser = ctx.createAnalyser();
+        const streamNode = ctx.createMediaStreamSource(stream);
+        streamNode.connect(analyser);
+
+        // Create a new volume meter and connect it.
+        meter = createAudioMeter(ctx);
+        streamNode.connect(meter);
+
+        drawLoop();
+    }
+
+    // Create pitch bar
+    function drawLoop(time) {
+
+        var pitchVolume = meter.volume * WIDTH * 1.4;
+
+        var height = 0;
+
+        // Pitch detection minimum volume
+        var minimum_volume = 75;
+
+        // Get width if Recording started
+        if (recordingStarted) {
+
+            if (pitchVolume < minimum_volume) {
+                height = 5;
+            } else if (pitchVolume >= minimum_volume && pitchVolume < (minimum_volume + 20)) {
+                height = 12;
+            } else if (pitchVolume >= (minimum_volume + 20) && pitchVolume < (minimum_volume + 40)) {
+                height = 19;
+            } else if (pitchVolume >= (minimum_volume + 40) && pitchVolume < (minimum_volume + 60)) {
+                height = 26;
+            } else if (pitchVolume >= (minimum_volume + 60) && pitchVolume < (minimum_volume + 80)) {
+                height = 33;
+            } else if (pitchVolume >= (minimum_volume + 80) && pitchVolume < (minimum_volume + 100)) {
+                height = 40;
+            } else if (pitchVolume >= (minimum_volume + 100) && pitchVolume < (minimum_volume + 120)) {
+                height = 47;
+            } else if (pitchVolume >= (minimum_volume + 120) && pitchVolume < (minimum_volume + 140)) {
+                height = 54;
+            } else if (pitchVolume >= (minimum_volume + 140) && pitchVolume < (minimum_volume + 160)) {
+                height = 61;
+            } else if (pitchVolume >= (minimum_volume + 160) && pitchVolume < (minimum_volume + 180)) {
+                height = 68;
+            } else if (pitchVolume >= (minimum_volume + 180)) {
+                height = 75;
+            }
+
+        }
+
+        // Update width
+        //document.getElementById('g-voiceVolume').style.height = height + '%';
+
+        rafID = window.requestAnimationFrame(drawLoop);
+    }
+</script>
+<script>
+    /*document.addEventListener('DOMContentLoaded', function() {
+        GreenAudioPlayer.init({
+            selector: '.player',
+            stopOthersOnPlay: true,
+            enableKeystrokes: true
+        });
+    });*/
+</script>
+</html>
