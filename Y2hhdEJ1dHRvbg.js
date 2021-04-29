@@ -1,17 +1,17 @@
 $(document).ready(function() {
 
-    $('#MainPageInstructions').show();
-    $('#1').hide();
-    $('#2').hide();
-    $('#3').hide();
-    $('#4').hide();
-    $('#5').hide();
-    $('#6').hide();
-    $('#7').hide();
-    $('#8').hide();
-    $('#9').hide();
-    $('#10').hide();
-    $('#11').hide();
+    $('#MainPageInstructions').css("display", "initial");;
+    $('#1').css("display", "none");
+    $('#2').css("display", "none");
+    $('#3').css("display", "none");
+    $('#4').css("display", "none");
+    $('#5').css("display", "none");
+    $('#6').css("display", "none");
+    $('#7').css("display", "none");
+    $('#8').css("display", "none");
+    $('#9').css("display", "none");
+    $('#10').css("display", "none");
+    $('#11').css("display", "none");
 
     $(".bi-chat-quote").on("mouseover", function() {
         $(this).css("opacity", "0");
@@ -115,19 +115,19 @@ $(document).ready(function() {
         }
     });*/
     $('#box1').click(function() {
-        $('#MainPageInstructions').hide();
-        $('#box1 > #messageCount').hide();
-        $('#1').show();
-        $('#2').hide();
-        $('#3').hide();
-        $('#4').hide();
-        $('#5').hide();
-        $('#6').hide();
-        $('#7').hide();
-        $('#8').hide();
-        $('#9').hide();
-        $('#10').hide();
-        $('#11').hide();
+        $('#MainPageInstructions').css("display", "none");
+        $('#box1 > #messageCount').css("display", "none");
+        $('#1').css("display", "initial");;
+        $('#2').css("display", "none");
+        $('#3').css("display", "none");
+        $('#4').css("display", "none");
+        $('#5').css("display", "none");
+        $('#6').css("display", "none");
+        $('#7').css("display", "none");
+        $('#8').css("display", "none");
+        $('#9').css("display", "none");
+        $('#10').css("display", "none");
+        $('#11').css("display", "none");
         /*    //$('#box1').hover(function(){$('#box1').css("filter", "brightness(115%)");},
                         //     function(){$('#box1').css("filter", "brightness(100%)");});
             $('#box1').css({
@@ -200,19 +200,19 @@ $(document).ready(function() {
     });
 
     $('#box2').click(function() {
-        $('#MainPageInstructions').hide();
-        $('#1').hide();
-        $('#box2 > #messageCount').hide();
-        $('#2').show();
-        $('#3').hide();
-        $('#4').hide();
-        $('#5').hide();
-        $('#6').hide();
-        $('#7').hide();
-        $('#8').hide();
-        $('#9').hide();
-        $('#10').hide();
-        $('#11').hide();
+        $('#MainPageInstructions').css("display", "none");
+        $('#1').css("display", "none");
+        $('#box2 > #messageCount').css("display", "none");
+        $('#2').css("display", "initial");;
+        $('#3').css("display", "none");
+        $('#4').css("display", "none");
+        $('#5').css("display", "none");
+        $('#6').css("display", "none");
+        $('#7').css("display", "none");
+        $('#8').css("display", "none");
+        $('#9').css("display", "none");
+        $('#10').css("display", "none");
+        $('#11').css("display", "none");
         /*        $//('#box2').hover(function(){$('#box2').css("filter", "brightness(115%)");},
                                  //function(){$('#box2').css("filter", "brightness(100%)");});
                 $('#box1').css({
@@ -274,19 +274,19 @@ $(document).ready(function() {
     });
 
     $('#box3').click(function() {
-        $('#MainPageInstructions').hide();
-        $('#1').hide();
-        $('#2').hide();
-        $('#box3 > #messageCount').hide();
-        $('#3').show();
-        $('#4').hide();
-        $('#5').hide();
-        $('#6').hide();
-        $('#7').hide();
-        $('#8').hide();
-        $('#9').hide();
-        $('#10').hide();
-        $('#11').hide();
+        $('#MainPageInstructions').css("display", "none");
+        $('#1').css("display", "none");
+        $('#2').css("display", "none");
+        $('#box3 > #messageCount').css("display", "none");
+        $('#3').css("display", "initial");;
+        $('#4').css("display", "none");
+        $('#5').css("display", "none");
+        $('#6').css("display", "none");
+        $('#7').css("display", "none");
+        $('#8').css("display", "none");
+        $('#9').css("display", "none");
+        $('#10').css("display", "none");
+        $('#11').css("display", "none");
         /*        //$('#box3').hover(function(){$('#box3').css("filter", "brightness(115%)");},
                     //             function(){$('#box3').css("filter", "brightness(100%)");});
                 $('#box1').css({
@@ -348,19 +348,19 @@ $(document).ready(function() {
     });
 
     $('#box4').click(function() {
-        $('#MainPageInstructions').hide();
-        $('#1').hide();
-        $('#2').hide();
-        $('#3').hide();
-        $('#box4 > #messageCount').hide();
-        $('#4').show();
-        $('#5').hide();
-        $('#6').hide();
-        $('#7').hide();
-        $('#8').hide();
-        $('#9').hide();
-        $('#10').hide();
-        $('#11').hide();
+        $('#MainPageInstructions').css("display", "none");
+        $('#1').css("display", "none");
+        $('#2').css("display", "none");
+        $('#3').css("display", "none");
+        $('#box4 > #messageCount').css("display", "none");
+        $('#4').css("display", "initial");;
+        $('#5').css("display", "none");
+        $('#6').css("display", "none");
+        $('#7').css("display", "none");
+        $('#8').css("display", "none");
+        $('#9').css("display", "none");
+        $('#10').css("display", "none");
+        $('#11').css("display", "none");
         //    $('#box4').hover(function(){$('#box4').css("filter", "brightness(115%)");},
         //                 function(){$('#box4').css("filter", "brightness(100%)");});
         /*        $('#box1').css({
@@ -421,19 +421,19 @@ $(document).ready(function() {
     });
 
     $('#box5').click(function() {
-        $('#MainPageInstructions').hide();
-        $('#1').hide();
-        $('#2').hide();
-        $('#3').hide();
-        $('#4').hide();
-        $('#box5 > #messageCount').hide();
-        $('#5').show();
-        $('#6').hide();
-        $('#7').hide();
-        $('#8').hide();
-        $('#9').hide();
-        $('#10').hide();
-        $('#11').hide();
+        $('#MainPageInstructions').css("display", "none");
+        $('#1').css("display", "none");
+        $('#2').css("display", "none");
+        $('#3').css("display", "none");
+        $('#4').css("display", "none");
+        $('#box5 > #messageCount').css("display", "none");
+        $('#5').css("display", "initial");;
+        $('#6').css("display", "none");
+        $('#7').css("display", "none");
+        $('#8').css("display", "none");
+        $('#9').css("display", "none");
+        $('#10').css("display", "none");
+        $('#11').css("display", "none");
         //$('#box5').hover(function(){$('#box5').css("filter", "brightness(115%)");},
         //                 function(){$('#box5').css("filter", "brightness(100%)");});
         /*        $('#box1').css({
@@ -494,19 +494,19 @@ $(document).ready(function() {
     });
 
     $('#box6').click(function() {
-        $('#MainPageInstructions').hide();
-        $('#1').hide();
-        $('#2').hide();
-        $('#3').hide();
-        $('#4').hide();
-        $('#5').hide();
-        $('#box6 > #messageCount').hide();
-        $('#6').show();
-        $('#7').hide();
-        $('#8').hide();
-        $('#9').hide();
-        $('#10').hide();
-        $('#11').hide();
+        $('#MainPageInstructions').css("display", "none");
+        $('#1').css("display", "none");
+        $('#2').css("display", "none");
+        $('#3').css("display", "none");
+        $('#4').css("display", "none");
+        $('#5').css("display", "none");
+        $('#box6 > #messageCount').css("display", "none");
+        $('#6').css("display", "initial");;
+        $('#7').css("display", "none");
+        $('#8').css("display", "none");
+        $('#9').css("display", "none");
+        $('#10').css("display", "none");
+        $('#11').css("display", "none");
         //$('#box6').hover(function(){$('#box6').css("filter", "brightness(115%)");},
         // function(){$('#box6').css("filter", "brightness(100%)");});
 
@@ -568,19 +568,19 @@ $(document).ready(function() {
     });
 
     $('#box7').click(function() {
-        $('#MainPageInstructions').hide();
-        $('#1').hide();
-        $('#2').hide();
-        $('#3').hide();
-        $('#4').hide();
-        $('#5').hide();
-        $('#6').hide();
-        $('#box7 > #messageCount').hide();
-        $('#7').show();
-        $('#8').hide();
-        $('#9').hide();
-        $('#10').hide();
-        $('#11').hide();
+        $('#MainPageInstructions').css("display", "none");
+        $('#1').css("display", "none");
+        $('#2').css("display", "none");
+        $('#3').css("display", "none");
+        $('#4').css("display", "none");
+        $('#5').css("display", "none");
+        $('#6').css("display", "none");
+        $('#box7 > #messageCount').css("display", "none");
+        $('#7').css("display", "initial");;
+        $('#8').css("display", "none");
+        $('#9').css("display", "none");
+        $('#10').css("display", "none");
+        $('#11').css("display", "none");
         //$('#box7').hover(function(){$('#box7').css("filter", "brightness(115%)");},
         //                 function(){$('#box7').css("filter", "brightness(100%)");});
         /*        $('#box1').css({
@@ -642,67 +642,67 @@ $(document).ready(function() {
     });
 
     $('#box8').click(function() {
-        $('#MainPageInstructions').hide();
-        $('#1').hide();
-        $('#2').hide();
-        $('#3').hide();
-        $('#4').hide();
-        $('#5').hide();
-        $('#6').hide();
-        $('#7').hide();
-        $('#box8 > #messageCount').hide();
-        $('#8').show();
-        $('#9').hide();
-        $('#10').hide();
-        $('#11').hide();
+        $('#MainPageInstructions').css("display", "none");
+        $('#1').css("display", "none");
+        $('#2').css("display", "none");
+        $('#3').css("display", "none");
+        $('#4').css("display", "none");
+        $('#5').css("display", "none");
+        $('#6').css("display", "none");
+        $('#7').css("display", "none");
+        $('#box8 > #messageCount').css("display", "none");
+        $('#8').css("display", "initial");;
+        $('#9').css("display", "none");
+        $('#10').css("display", "none");
+        $('#11').css("display", "none");
     });
 
     $('#box9').click(function() {
-        $('#MainPageInstructions').hide();
-        $('#1').hide();
-        $('#2').hide();
-        $('#3').hide();
-        $('#4').hide();
-        $('#5').hide();
-        $('#6').hide();
-        $('#7').hide();
-        $('#8').hide();
-        $('#box9 > #messageCount').hide();
-        $('#9').show();
-        $('#10').hide();
-        $('#11').hide();
+        $('#MainPageInstructions').css("display", "none");
+        $('#1').css("display", "none");
+        $('#2').css("display", "none");
+        $('#3').css("display", "none");
+        $('#4').css("display", "none");
+        $('#5').css("display", "none");
+        $('#6').css("display", "none");
+        $('#7').css("display", "none");
+        $('#8').css("display", "none");
+        $('#box9 > #messageCount').css("display", "none");
+        $('#9').css("display", "initial");;
+        $('#10').css("display", "none");
+        $('#11').css("display", "none");
     });
 
     $('#box10').click(function() {
-        $('#MainPageInstructions').hide();
-        $('#1').hide();
-        $('#2').hide();
-        $('#3').hide();
-        $('#4').hide();
-        $('#5').hide();
-        $('#6').hide();
-        $('#7').hide();
-        $('#8').hide();
-        $('#9').hide();
-        $('#box10 > #messageCount').hide();
-        $('#10').show();
-        $('#11').hide();
+        $('#MainPageInstructions').css("display", "none");
+        $('#1').css("display", "none");
+        $('#2').css("display", "none");
+        $('#3').css("display", "none");
+        $('#4').css("display", "none");
+        $('#5').css("display", "none");
+        $('#6').css("display", "none");
+        $('#7').css("display", "none");
+        $('#8').css("display", "none");
+        $('#9').css("display", "none");
+        $('#box10 > #messageCount').css("display", "none");
+        $('#10').css("display", "initial");;
+        $('#11').css("display", "none");
     });
 
     $('#box11').click(function() {
-        $('#MainPageInstructions').hide();
-        $('#1').hide();
-        $('#2').hide();
-        $('#3').hide();
-        $('#4').hide();
-        $('#5').hide();
-        $('#6').hide();
-        $('#7').hide();
-        $('#8').hide();
-        $('#9').hide();
-        $('#10').hide();
-        $('#box11 > #messageCount').hide();
-        $('#11').show();
+        $('#MainPageInstructions').css("display", "none");
+        $('#1').css("display", "none");
+        $('#2').css("display", "none");
+        $('#3').css("display", "none");
+        $('#4').css("display", "none");
+        $('#5').css("display", "none");
+        $('#6').css("display", "none");
+        $('#7').css("display", "none");
+        $('#8').css("display", "none");
+        $('#9').css("display", "none");
+        $('#10').css("display", "none");
+        $('#box11 > #messageCount').css("display", "none");
+        $('#11').css("display", "initial");;
     });
 
 
