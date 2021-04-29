@@ -1,5 +1,4 @@
-window.onload = function() {
-    $(document).ready(function() {
+   $(document).ready(function() {
         $('#g-send').click(function() {
             let textMessage = document.querySelector('.gaming #w-input-text').innerText;
             //var text = $('#html').val();
@@ -191,7 +190,7 @@ window.onload = function() {
     });*/
 
 
-}
+
 
 /*const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
