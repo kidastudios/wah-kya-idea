@@ -8,9 +8,25 @@ window.onload = function() {
             if (cleanText !== " " && cleanText !== "" && cleanText !== null && cleanText !== "\n") {
 
                 $('.g-content').append('<div class=userMessage><p>' + cleanText + '</p></div>');
-                $('.g-content').append('<div class=backendChat><p>We have received your input! Would you like to elaborate more?</p></div>');
-                $('.g-content').append('<div class=backendChat><p>If we implement your input, we might decide to reward you for the same! Kindly enter your name and contact details as well!</p></div>');
+
+                $('.g-content').append('<div class=typing-indicator id=g-content-typing-indicator><span></span><span></span><span></span></div>');
                 $('.g-content').stop().animate({ scrollTop: $('.g-content')[0].scrollHeight }, 1000);
+
+                setTimeout(function() {
+                    $('#g-content-typing-indicator').remove();
+
+                    $('.g-content').append('<div class=backendChat><p>We have received your input! Would you like to elaborate more?</p></div>');
+                    $('.g-content').append('<div class=typing-indicator id=g-content-typing-indicator><span></span><span></span><span></span></div>');
+
+                    $('.g-content').stop().animate({ scrollTop: $('.g-content')[0].scrollHeight }, 1000);
+
+                    setTimeout(function() {
+                        $('#g-content-typing-indicator').remove();
+                        $('.g-content').append('<div class=backendChat><p>If we implement your input, we might decide to reward you for the same! Kindly enter your name and contact details as well!</p></div>');
+                        $('.g-content').stop().animate({ scrollTop: $('.g-content')[0].scrollHeight }, 1000);
+                    }, 3000);
+
+                }, 3000);
             }
             document.getElementsByClassName('g-content')[0].style.height = '82%';
             document.querySelector(".gaming .inputbar").style.height = '10%';
@@ -163,7 +179,6 @@ window.onload = function() {
             document.querySelector('.apps-websites #w-input-text').innerText = "";
         });
     });
-
     /*var input = document.getElementById("message");
     input.addEventListener("keyup", function(event) {
         if (event.key === 13) {
