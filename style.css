@@ -1397,6 +1397,7 @@ h1 {
     html,
     body {
         background: black;
+        overflow: hidden;
     }
     .leftsidebar {
         top: 1.5%;
