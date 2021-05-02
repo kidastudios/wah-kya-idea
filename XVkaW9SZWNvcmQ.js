@@ -6,16 +6,16 @@ $(document).ready(function() {
         conHeight = txt.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".gaming .inputbar").style.height = '10%';
-            ibar[0].style.height = '80%';
+            ibar[0].style.height = '98%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".gaming .inputbar").style.height = '13%';
-            ibar[0].style.height = '80%';
+            ibar[0].style.height = '98%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".gaming .inputbar").style.height = '16%';
-            ibar[0].style.height = '80%';
+            ibar[0].style.height = '98%';
         } else if (conHeight > '72') {
             document.querySelector(".gaming .inputbar").style.height = '18%';
-            ibar[0].style.height = '80%';
+            ibar[0].style.height = '98%';
         }
     });
     //Movies

@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="description" content="" />
+    <meta name="google-site-verification" content="" />
+
+    <meta name="google" content="notranslate" />
+
+    <meta name="robots" content="index,follow" />
+
+    <meta name="google" content="nositelinkssearchbox" />
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -45,8 +55,24 @@
 <body>
     <!-- Left Side for Chat page-->
     <div class="leftside">
+        <div class="reviews-box-button button-box-1">
+            <img src="Images/LOGO.png" class="logo">
+            <img src="Images/App-Store-Logo.png" class="app-store">
+            <img src="Images/google-play-store-logo.png" class="play-store">
+        </div>
+        <div class="reviews-box-button button-box-2">
+        </div>
+        <div class="reviews-box-button button-box-3">
+            <div></div>
+        </div>
+        <div class="reviews-box-button button-box-4">
+            Wah!
+        </div>
         <div class="search">
-            <input id="filter" type="text" placeholder="Type here to search">
+            <input id="filter" type="text" placeholder="Search for a topic">
+            <span>
+                <img src="Images/771235-200.png">
+            </span>
             <script>
                 $("#filter").keyup(function() {
 
@@ -194,12 +220,12 @@
             <div class="box" id="box6">
                 <div class="profile_pic">
                     <i class="bi bi-camera-reels">
-                        <p>videos</p>
+                        <p>youtube channel</p>
                     </i>
                     <!--<img src="Images/Movies.jpeg" alt="" class="profile-image rounded-circle">-->
                 </div>
                 <div class="topic1_name">
-                    Videos
+                    YouTube Channel
                 </div>
                 <div class="messageCount" id="messageCount">
                     1
@@ -1204,7 +1230,7 @@
         </div>
 
     </div>
-    <!--Total Left-->
+    <!--
     <div class="leftsidebar">
 
         <div class="info-button">
@@ -1218,8 +1244,8 @@
         <div class="play-store logo-div" id="play-store">
             <img src="Images/google-play-store-logo.png">
         </div>
-
-        <!--<div><i class="bi bi-chat-quote"></i><i class="bi bi-chat-quote-fill"></i></div>
+    -->
+    <!--<div><i class="bi bi-chat-quote"></i><i class="bi bi-chat-quote-fill"></i></div>
         <div><i class="bi bi-info-circle"></i><i class="bi bi-info-circle-fill"></i></div>
         <div><i class="bi bi-gear"></i><i class="bi bi-gear-fill"></i></div>-->
     </div>
@@ -1395,15 +1421,6 @@
 
         rafID = window.requestAnimationFrame(drawLoop);
     }
-</script>
-<script>
-    /*document.addEventListener('DOMContentLoaded', function() {
-                                                                                                                                                                                                        GreenAudioPlayer.init({
-                                                                                                                                                                                                            selector: '.player',
-                                                                                                                                                                                                            stopOthersOnPlay: true,
-                                                                                                                                                                                                            enableKeystrokes: true
-                                                                                                                                                                                                        });
-                                                                                                                                                                                                    });*/
 </script>
 
 </html>
