@@ -9,12 +9,27 @@ $(document).ready(function() {
             ibar[0].style.height = '98%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".gaming .inputbar").style.height = '13%';
+            document.querySelector(".gaming .inputbar .container").style.bottom = '18%';
+            document.querySelector(".gaming .inputbar .attach").style.bottom = '18.5%';
+            document.querySelector(".gaming .inputbar .record").style.bottom = '18.5%';
+            document.querySelector(".gaming .inputbar .stopRecord").style.bottom = '18.5%';
+            document.querySelector(".gaming .inputbar .send").style.bottom = '18.5%';
             ibar[0].style.height = '98%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".gaming .inputbar").style.height = '16%';
+            document.querySelector(".gaming .inputbar .container").style.bottom = '16%';
+            document.querySelector(".gaming .inputbar .attach").style.bottom = '16.5%';
+            document.querySelector(".gaming .inputbar .record").style.bottom = '16.5%';
+            document.querySelector(".gaming .inputbar .stopRecord").style.bottom = '16.5%';
+            document.querySelector(".gaming .inputbar .send").style.bottom = '16.5%';
             ibar[0].style.height = '98%';
         } else if (conHeight > '72') {
             document.querySelector(".gaming .inputbar").style.height = '18%';
+            document.querySelector(".gaming .inputbar .container").style.bottom = '14%';
+            document.querySelector(".gaming .inputbar .attach").style.bottom = '14.5%';
+            document.querySelector(".gaming .inputbar .record").style.bottom = '14.5%';
+            document.querySelector(".gaming .inputbar .stopRecord").style.bottom = '14.5%';
+            document.querySelector(".gaming .inputbar .send").style.bottom = '14.5%';
             ibar[0].style.height = '98%';
         }
     });
@@ -25,16 +40,31 @@ $(document).ready(function() {
         conHeight = txt1.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".movies .inputbar").style.height = '10%';
-            ibar1[0].style.height = '80%';
+            ibar1[0].style.height = '98%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".movies .inputbar").style.height = '13%';
-            ibar1[0].style.height = '80%';
+            document.querySelector(".movies .inputbar .container").style.bottom = '18%';
+            document.querySelector(".movies .inputbar .attach").style.bottom = '18.5%';
+            document.querySelector(".movies .inputbar .record").style.bottom = '18.5%';
+            document.querySelector(".movies .inputbar .stopRecord").style.bottom = '18.5%';
+            document.querySelector(".movies .inputbar .send").style.bottom = '18.5%';
+            ibar1[0].style.height = '98%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".movies .inputbar").style.height = '16%';
-            ibar1[0].style.height = '80%';
+            document.querySelector(".movies .inputbar .container").style.bottom = '16%';
+            document.querySelector(".movies .inputbar .attach").style.bottom = '16.5%';
+            document.querySelector(".movies .inputbar .record").style.bottom = '16.5%';
+            document.querySelector(".movies .inputbar .stopRecord").style.bottom = '16.5%';
+            document.querySelector(".movies .inputbar .send").style.bottom = '16.5%';
+            ibar1[0].style.height = '98%';
         } else if (conHeight > '72') {
             document.querySelector(".movies .inputbar").style.height = '18%';
-            ibar1[0].style.height = '80%';
+            document.querySelector(".movies .inputbar .container").style.bottom = '14%';
+            document.querySelector(".movies .inputbar .attach").style.bottom = '14.5%';
+            document.querySelector(".movies .inputbar .record").style.bottom = '14.5%';
+            document.querySelector(".movies .inputbar .stopRecord").style.bottom = '14.5%';
+            document.querySelector(".movies .inputbar .send").style.bottom = '14.5%';
+            ibar1[0].style.height = '98%';
         }
     });
     //Music
@@ -44,16 +74,16 @@ $(document).ready(function() {
         conHeight = txt2.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".music .inputbar").style.height = '10%';
-            iba2r[0].style.height = '80%';
+            iba2r[0].style.height = '98%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".music .inputbar").style.height = '13%';
-            ibar2[0].style.height = '80%';
+            ibar2[0].style.height = '98%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".music .inputbar").style.height = '16%';
-            ibar2[0].style.height = '80%';
+            ibar2[0].style.height = '98%';
         } else if (conHeight > '72') {
             document.querySelector(".music .inputbar").style.height = '18%';
-            ibar2[0].style.height = '80%';
+            ibar2[0].style.height = '98%';
         }
     });
     //Appliances
@@ -63,16 +93,16 @@ $(document).ready(function() {
         conHeight = txt3.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".appliances .inputbar").style.height = '10%';
-            ibar3[0].style.height = '80%';
+            ibar3[0].style.height = '98%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".appliances .inputbar").style.height = '13%';
-            ibar3[0].style.height = '80%';
+            ibar3[0].style.height = '98%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".appliances .inputbar").style.height = '16%';
-            ibar3[0].style.height = '80%';
+            ibar3[0].style.height = '98%';
         } else if (conHeight > '72') {
             document.querySelector(".appliances .inputbar").style.height = '18%';
-            ibar3[0].style.height = '80%';
+            ibar3[0].style.height = '98%';
         }
     });
     //Art
@@ -82,16 +112,16 @@ $(document).ready(function() {
         conHeight = txt4.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".art .inputbar").style.height = '10%';
-            ibar4[0].style.height = '80%';
+            ibar4[0].style.height = '98%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".art .inputbar").style.height = '13%';
-            ibar4[0].style.height = '80%';
+            ibar4[0].style.height = '98%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".art .inputbar").style.height = '16%';
-            ibar4[0].style.height = '80%';
+            ibar4[0].style.height = '98%';
         } else if (conHeight > '72') {
             document.querySelector(".art .inputbar").style.height = '18%';
-            ibar4[0].style.height = '80%';
+            ibar4[0].style.height = '98%';
         }
     });
     //Videos
@@ -101,16 +131,16 @@ $(document).ready(function() {
         conHeight = txt5.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".videos .inputbar").style.height = '10%';
-            ibar5[0].style.height = '80%';
+            ibar5[0].style.height = '98%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".videos .inputbar").style.height = '13%';
-            ibar5[0].style.height = '80%';
+            ibar5[0].style.height = '98%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".videos .inputbar").style.height = '16%';
-            ibar5[0].style.height = '80%';
+            ibar5[0].style.height = '98%';
         } else if (conHeight > '72') {
             document.querySelector(".videos .inputbar").style.height = '18%';
-            ibar5[0].style.height = '80%';
+            ibar5[0].style.height = '98%';
         }
     });
     //Others
@@ -120,16 +150,16 @@ $(document).ready(function() {
         conHeight = txt6.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".others .inputbar").style.height = '10%';
-            ibar6[0].style.height = '80%';
+            ibar6[0].style.height = '98%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".others .inputbar").style.height = '13%';
-            ibar6[0].style.height = '80%';
+            ibar6[0].style.height = '98%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".others .inputbar").style.height = '16%';
-            ibar6[0].style.height = '80%';
+            ibar6[0].style.height = '98%';
         } else if (conHeight > '72') {
             document.querySelector(".others .inputbar").style.height = '18%';
-            ibar6[0].style.height = '80%';
+            ibar6[0].style.height = '98%';
         }
     });
     //Technology
@@ -139,16 +169,16 @@ $(document).ready(function() {
         conHeight = txt7.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".technology .inputbar").style.height = '10%';
-            ibar7[0].style.height = '80%';
+            ibar7[0].style.height = '98%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".technology .inputbar").style.height = '13%';
-            ibar7[0].style.height = '80%';
+            ibar7[0].style.height = '98%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".technology .inputbar").style.height = '16%';
-            ibar7[0].style.height = '80%';
+            ibar7[0].style.height = '98%';
         } else if (conHeight > '72') {
             document.querySelector(".technology .inputbar").style.height = '18%';
-            ibar7[0].style.height = '80%';
+            ibar7[0].style.height = '98%';
         }
     });
     //DIY & Crafts
@@ -158,16 +188,16 @@ $(document).ready(function() {
         conHeight = txt8.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".diy-crafts .inputbar").style.height = '10%';
-            ibar8[0].style.height = '80%';
+            ibar8[0].style.height = '98%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".diy-crafts .inputbar").style.height = '13%';
-            ibar8[0].style.height = '80%';
+            ibar8[0].style.height = '98%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".diy-crafts .inputbar").style.height = '16%';
-            ibar8[0].style.height = '80%';
+            ibar8[0].style.height = '98%';
         } else if (conHeight > '72') {
             document.querySelector(".diy-crafts .inputbar").style.height = '18%';
-            ibar8[0].style.height = '80%';
+            ibar8[0].style.height = '98%';
         }
     });
     //Fashion
@@ -177,16 +207,16 @@ $(document).ready(function() {
         conHeight = txt9.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".fashion .inputbar").style.height = '10%';
-            ibar9[0].style.height = '80%';
+            ibar9[0].style.height = '98%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".fashion .inputbar").style.height = '13%';
-            ibar9[0].style.height = '80%';
+            ibar9[0].style.height = '98%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".fashion .inputbar").style.height = '16%';
-            ibar9[0].style.height = '80%';
+            ibar9[0].style.height = '98%';
         } else if (conHeight > '72') {
             document.querySelector(".fashion .inputbar").style.height = '18%';
-            ibar9[0].style.height = '80%';
+            ibar9[0].style.height = '98%';
         }
     });
     //Apps & Websites
@@ -196,16 +226,16 @@ $(document).ready(function() {
         conHeight = txt10.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".apps-websites .inputbar").style.height = '10%';
-            ibar10[0].style.height = '80%';
+            ibar10[0].style.height = '98%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".apps-websites .inputbar").style.height = '13%';
-            ibar10[0].style.height = '80%';
+            ibar10[0].style.height = '98%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".apps-websites .inputbar").style.height = '16%';
-            ibar10[0].style.height = '80%';
+            ibar10[0].style.height = '98%';
         } else if (conHeight > '72') {
             document.querySelector(".apps-websites .inputbar").style.height = '18%';
-            ibar10[0].style.height = '80%';
+            ibar10[0].style.height = '98%';
         }
     });
 

@@ -1010,7 +1010,7 @@ audio {
 
 .attach {
     position: absolute;
-    bottom: 25%;
+    bottom: 22.5%;
     padding: 5px;
     z-index: 1;
     width: 40px;
@@ -1042,7 +1042,7 @@ audio {
 
 .record {
     position: absolute;
-    bottom: 25%;
+    bottom: 22.5%;
     padding: 5px;
     z-index: 1;
     width: 40px;
@@ -1073,7 +1073,7 @@ audio {
 
 .stopRecord {
     position: absolute;
-    bottom: 25%;
+    bottom: 14.5%;
     padding: 5px;
     z-index: 1;
     width: 40px;
@@ -1086,6 +1086,7 @@ audio {
     background-color: transparent;
     visibility: hidden;
     color: crimson;
+    animation: 3s pulse20 infinite ease-out;
     /*box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);*/
 }
 
@@ -1116,7 +1117,7 @@ audio {
 .send {
     position: absolute;
     padding: 5px;
-    bottom: 25%;
+    bottom: 22.5%;
     z-index: 1;
     width: 40px;
     transition: background-color color 400ms;
@@ -1209,6 +1210,12 @@ audio {
 @keyframes pulse {
     50% {
         transform: scale(1.05);
+    }
+}
+
+@keyframes pulse20 {
+    50% {
+        transform: scale(1.35);
     }
 }
 

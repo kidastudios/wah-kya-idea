@@ -38,11 +38,27 @@
 
            if (cleanText !== " " && cleanText !== "" && cleanText !== null && cleanText !== "\n") {
                $('.m-content').append('<div class=userMessage><p>' + cleanText + '</p></div>');
-               $('.m-content').append('<div class=backendChat><p>We have received your input! Would you like to elaborate more?</p></div>');
-               $('.m-content').append('<div class=backendChat><p>If we implement your input, we might decide to reward you for the same! Kindly enter your name and contact details as well!</p></div>');
+
+               $('.m-content').append('<div class=typing-indicator id=m-content-typing-indicator><span></span><span></span><span></span></div>');
                $('.m-content').stop().animate({ scrollTop: $('.m-content')[0].scrollHeight }, 1000);
+
+               setTimeout(function() {
+                   $('#m-content-typing-indicator').remove();
+
+                   $('.m-content').append('<div class=backendChat><p>We have received your input! Would you like to elaborate more?</p></div>');
+                   $('.m-content').append('<div class=typing-indicator id=m-content-typing-indicator><span></span><span></span><span></span></div>');
+
+                   $('.m-content').stop().animate({ scrollTop: $('.m-content')[0].scrollHeight }, 1000);
+
+                   setTimeout(function() {
+                       $('#m-content-typing-indicator').remove();
+                       $('.m-content').append('<div class=backendChat><p>If we implement your input, we might decide to reward you for the same! Kindly enter your name and contact details as well!</p></div>');
+                       $('.m-content').stop().animate({ scrollTop: $('.m-content')[0].scrollHeight }, 1000);
+                   }, 3000);
+
+               }, 3000);
            }
-           document.getElementsByClassName('m-content')[0].style.height = '82%';
+           document.getElementsByClassName('m-content')[0].style.height = '90%';
            document.querySelector(".music .inputbar").style.height = '10%';
            document.querySelector('.music #w-input-text').innerText = "";
        });
@@ -53,11 +69,27 @@
 
            if (cleanText !== " " && cleanText !== "" && cleanText !== null && cleanText !== "\n") {
                $('.ms-content').append('<div class=userMessage><p>' + cleanText + '</p></div>');
-               $('.ms-content').append('<div class=backendChat><p>We have received your input! Would you like to elaborate more?</p></div>');
-               $('.ms-content').append('<div class=backendChat><p>If we implement your input, we might decide to reward you for the same! Kindly enter your name and contact details as well!</p></div>');
+
+               $('.ms-content').append('<div class=typing-indicator id=ms-content-typing-indicator><span></span><span></span><span></span></div>');
                $('.ms-content').stop().animate({ scrollTop: $('.ms-content')[0].scrollHeight }, 1000);
+
+               setTimeout(function() {
+                   $('#ms-content-typing-indicator').remove();
+
+                   $('.ms-content').append('<div class=backendChat><p>We have received your input! Would you like to elaborate more?</p></div>');
+                   $('.ms-content').append('<div class=typing-indicator id=ms-content-typing-indicator><span></span><span></span><span></span></div>');
+
+                   $('.ms-content').stop().animate({ scrollTop: $('.ms-content')[0].scrollHeight }, 1000);
+
+                   setTimeout(function() {
+                       $('#ms-content-typing-indicator').remove();
+                       $('.ms-content').append('<div class=backendChat><p>If we implement your input, we might decide to reward you for the same! Kindly enter your name and contact details as well!</p></div>');
+                       $('.ms-content').stop().animate({ scrollTop: $('.ms-content')[0].scrollHeight }, 1000);
+                   }, 3000);
+
+               }, 3000);
            }
-           document.getElementsByClassName('ms-content')[0].style.height = '82%';
+           document.getElementsByClassName('ms-content')[0].style.height = '90%';
            document.querySelector(".movies .inputbar").style.height = '10%';
            document.querySelector('.movies #w-input-text').innerText = "";
        });
