@@ -131,6 +131,7 @@ head {
 
 .leftside {
     position: absolute;
+<<<<<<< Updated upstream
     top: 0%;
     left: 0%;
     width: 24%;
@@ -143,6 +144,17 @@ head {
 
 .bi-stars {
     color: #fdc921;
+=======
+    top: 2%;
+    left: 1%;
+    width: 22.5%;
+    height: 96%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+>>>>>>> Stashed changes
 }
 
 .bi-controller,
@@ -339,8 +351,13 @@ head {
 }
 
 .topic1_name {
+<<<<<<< Updated upstream
     font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu, Cantarell, Fira Sans, sans-serif;
     font-weight: 400;
+=======
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+>>>>>>> Stashed changes
     position: absolute;
     left: 85px;
     top: 40px;
@@ -713,6 +730,10 @@ head {
     left: 0%;
     background-color: rgb(230, 230, 230);
     text-align: center;
+<<<<<<< Updated upstream
+=======
+    font-family: 'Roboto', sans-serif;
+>>>>>>> Stashed changes
     font-weight: 600;
     vertical-align: middle;
     border-radius: 0px 0px 0 0;
@@ -861,6 +882,8 @@ head {
     font-size: 17px;
     margin: 0;
     word-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
 
 .userMessage {
@@ -882,6 +905,7 @@ head {
 }
 */
 
+<<<<<<< Updated upstream
 
 /* Pointed corner in chatbox */
 
@@ -936,8 +960,15 @@ head {
 .collapseExampleButton>p {
     padding: 14px;
     font-size: large;
+=======
+.userMessage>p {
+    padding: 20px;
+    font-size: 1.7rem;
+>>>>>>> Stashed changes
     margin: 0;
     word-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
 
 .backendChat::before {
@@ -1574,6 +1605,18 @@ div {
         height: 20px;
     }*/
 
+<<<<<<< Updated upstream
+=======
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+>>>>>>> Stashed changes
 * {
     margin: 0;
     padding: 0;
@@ -1758,6 +1801,10 @@ h1 {
 /*
 @media all and (max-width:780px) {
     .topic1_name {
+<<<<<<< Updated upstream
+=======
+        /*font-family: Heebo, sans-serif;*/
+>>>>>>> Stashed changes
         font-weight: 600;
         position: absolute;
         left: 75px;
