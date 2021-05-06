@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-    $('#MainPageInstructions').css("display", "initial");;
+    $('#MainPageInstructions').css("display", "initial");
+    $('#gojira').css("display", "none");
     $('#1').css("display", "none");
     $('#2').css("display", "none");
     $('#3').css("display", "none");
@@ -114,10 +115,11 @@ $(document).ready(function() {
             $('#7').find('.send').css("display","none");
         }
     });*/
-    $('#box1').click(function() {
+    $('#gojiraBox').click(function() {
         $('#MainPageInstructions').css("display", "none");
-        $('#box1 > #messageCount').css("display", "none");
-        $('#1').css("display", "initial");;
+        $('#gojira').css("display", "initial");
+        $('#gojiraBox > #messageCount').css("display", "none");
+        $('#1').css("display", "none");
         $('#2').css("display", "none");
         $('#3').css("display", "none");
         $('#4').css("display", "none");
@@ -128,82 +130,31 @@ $(document).ready(function() {
         $('#9').css("display", "none");
         $('#10').css("display", "none");
         $('#11').css("display", "none");
-        /*    //$('#box1').hover(function(){$('#box1').css("filter", "brightness(115%)");},
-                        //     function(){$('#box1').css("filter", "brightness(100%)");});
-            $('#box1').css({
-                "background-image": "linear-gradient(to bottom right, #0061ff, #60efff)"
-            });
-            /*$('#box1').hover(function() {
-                $('#box1').css({
-                    "filter": "brightness(120%)"
-                });
-                /*},
-                function() {
-                $('#box1').css({
-                    "background-image": "linear-gradient(to bottom right, #0061ff, #60efff)"
-                });
-            })
-        //    $('#box1').hover(function(){$('#box1').css("filter", "brightness(115%)");},
-             		//	     function(){$('#box1').css("filter", "brightness(100%)");});
+    });
 
-            $('#box2').css({
-                "background-image": "linear-gradient(white, white)"
-            });
-
-            $('#box3').css({
-                "background-image": "linear-gradient(white, white)"
-            });
-
-            $('#box4').css({
-                "background-image": "linear-gradient(white, white)"
-            });
-
-            $('#box5').css({
-                "background-image": "linear-gradient(white, white)"
-            });
-
-            $('#box6').css({
-                "background-image": "linear-gradient(white, white)"
-            });
-
-            $('#box7').css({
-                "background-image": "linear-gradient(white, white)"
-            });
-
-            $('#box1>.topic1_name').css({
-                "color": "white"
-            });
-
-            $('#box2>.topic1_name').css({
-                "color": "black"
-            });
-
-            $('#box3>.topic1_name').css({
-                "color": "black"
-            });
-
-            $('#box4>.topic1_name').css({
-                "color": "black"
-            });
-
-            $('#box5>.topic1_name').css({
-                "color": "black"
-            });
-
-            $('#box6>.topic1_name').css({
-                "color": "black"
-            });
-
-            $('#box7>.topic1_name').css({
-                "color": "black"
-            });*/
+    $('#box1').click(function() {
+        $('#MainPageInstructions').css("display", "none");
+        $('#gojira').css("display", "none");
+        $('#box1 > #messageCount').css("display", "none");
+        $('#1').css("display", "initial");
+        $('#2').css("display", "none");
+        $('#3').css("display", "none");
+        $('#4').css("display", "none");
+        $('#5').css("display", "none");
+        $('#6').css("display", "none");
+        $('#7').css("display", "none");
+        $('#8').css("display", "none");
+        $('#9').css("display", "none");
+        $('#10').css("display", "none");
+        $('#11').css("display", "none");
     });
 
     $('#box2').click(function() {
         $('#MainPageInstructions').css("display", "none");
+        $('#gojira').css("display", "none");
         $('#1').css("display", "none");
         $('#box2 > #messageCount').css("display", "none");
-        $('#2').css("display", "initial");;
+        $('#2').css("display", "initial");
         $('#3').css("display", "none");
         $('#4').css("display", "none");
         $('#5').css("display", "none");
@@ -275,10 +226,11 @@ $(document).ready(function() {
 
     $('#box3').click(function() {
         $('#MainPageInstructions').css("display", "none");
+        $('#gojira').css("display", "none");
         $('#1').css("display", "none");
         $('#2').css("display", "none");
         $('#box3 > #messageCount').css("display", "none");
-        $('#3').css("display", "initial");;
+        $('#3').css("display", "initial");
         $('#4').css("display", "none");
         $('#5').css("display", "none");
         $('#6').css("display", "none");
@@ -349,11 +301,12 @@ $(document).ready(function() {
 
     $('#box4').click(function() {
         $('#MainPageInstructions').css("display", "none");
+        $('#gojira').css("display", "none");
         $('#1').css("display", "none");
         $('#2').css("display", "none");
         $('#3').css("display", "none");
         $('#box4 > #messageCount').css("display", "none");
-        $('#4').css("display", "initial");;
+        $('#4').css("display", "initial");
         $('#5').css("display", "none");
         $('#6').css("display", "none");
         $('#7').css("display", "none");
@@ -422,12 +375,13 @@ $(document).ready(function() {
 
     $('#box5').click(function() {
         $('#MainPageInstructions').css("display", "none");
+        $('#gojira').css("display", "none");
         $('#1').css("display", "none");
         $('#2').css("display", "none");
         $('#3').css("display", "none");
         $('#4').css("display", "none");
         $('#box5 > #messageCount').css("display", "none");
-        $('#5').css("display", "initial");;
+        $('#5').css("display", "initial");
         $('#6').css("display", "none");
         $('#7').css("display", "none");
         $('#8').css("display", "none");
@@ -495,13 +449,14 @@ $(document).ready(function() {
 
     $('#box6').click(function() {
         $('#MainPageInstructions').css("display", "none");
+        $('#gojira').css("display", "none");
         $('#1').css("display", "none");
         $('#2').css("display", "none");
         $('#3').css("display", "none");
         $('#4').css("display", "none");
         $('#5').css("display", "none");
         $('#box6 > #messageCount').css("display", "none");
-        $('#6').css("display", "initial");;
+        $('#6').css("display", "initial");
         $('#7').css("display", "none");
         $('#8').css("display", "none");
         $('#9').css("display", "none");
@@ -569,6 +524,7 @@ $(document).ready(function() {
 
     $('#box7').click(function() {
         $('#MainPageInstructions').css("display", "none");
+        $('#gojira').css("display", "none");
         $('#1').css("display", "none");
         $('#2').css("display", "none");
         $('#3').css("display", "none");
@@ -576,7 +532,7 @@ $(document).ready(function() {
         $('#5').css("display", "none");
         $('#6').css("display", "none");
         $('#box7 > #messageCount').css("display", "none");
-        $('#7').css("display", "initial");;
+        $('#7').css("display", "initial");
         $('#8').css("display", "none");
         $('#9').css("display", "none");
         $('#10').css("display", "none");
@@ -643,6 +599,7 @@ $(document).ready(function() {
 
     $('#box8').click(function() {
         $('#MainPageInstructions').css("display", "none");
+        $('#gojira').css("display", "none");
         $('#1').css("display", "none");
         $('#2').css("display", "none");
         $('#3').css("display", "none");
@@ -651,7 +608,7 @@ $(document).ready(function() {
         $('#6').css("display", "none");
         $('#7').css("display", "none");
         $('#box8 > #messageCount').css("display", "none");
-        $('#8').css("display", "initial");;
+        $('#8').css("display", "initial");
         $('#9').css("display", "none");
         $('#10').css("display", "none");
         $('#11').css("display", "none");
@@ -659,6 +616,7 @@ $(document).ready(function() {
 
     $('#box9').click(function() {
         $('#MainPageInstructions').css("display", "none");
+        $('#gojira').css("display", "none");
         $('#1').css("display", "none");
         $('#2').css("display", "none");
         $('#3').css("display", "none");
@@ -668,13 +626,14 @@ $(document).ready(function() {
         $('#7').css("display", "none");
         $('#8').css("display", "none");
         $('#box9 > #messageCount').css("display", "none");
-        $('#9').css("display", "initial");;
+        $('#9').css("display", "initial");
         $('#10').css("display", "none");
         $('#11').css("display", "none");
     });
 
     $('#box10').click(function() {
         $('#MainPageInstructions').css("display", "none");
+        $('#gojira').css("display", "none");
         $('#1').css("display", "none");
         $('#2').css("display", "none");
         $('#3').css("display", "none");
@@ -685,12 +644,13 @@ $(document).ready(function() {
         $('#8').css("display", "none");
         $('#9').css("display", "none");
         $('#box10 > #messageCount').css("display", "none");
-        $('#10').css("display", "initial");;
+        $('#10').css("display", "initial");
         $('#11').css("display", "none");
     });
 
     $('#box11').click(function() {
         $('#MainPageInstructions').css("display", "none");
+        $('#gojira').css("display", "none");
         $('#1').css("display", "none");
         $('#2').css("display", "none");
         $('#3').css("display", "none");
@@ -702,10 +662,18 @@ $(document).ready(function() {
         $('#9').css("display", "none");
         $('#10').css("display", "none");
         $('#box11 > #messageCount').css("display", "none");
-        $('#11').css("display", "initial");;
+        $('#11').css("display", "initial");
     });
 
 
+    $('#gojira .attach').click(function() {
+        if ($('#gojira').find('#upload').css('display') === 'none') {
+            $('#gojira').find('#upload').css("display", "block");
+        } else {
+            $('#gojira').find('#upload').css("animation", "scaleZ 300ms ease-in-out forwards");
+            $('#gojira').find('#upload').css("display", "none");
+        }
+    });
     $('#1 .attach').click(function() {
         if ($('#1').find('#upload').css('display') === 'none') {
             $('#1').find('#upload').css("display", "block");

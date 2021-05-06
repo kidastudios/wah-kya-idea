@@ -1,4 +1,37 @@
    $(document).ready(function() {
+       $('#gojira-send').click(function() {
+           let textMessage = document.querySelector('.gojira #w-input-text').innerText;
+           //var text = $('#html').val();
+           var cleanText = textMessage.replace(/(<([^>]+)>)/ig, "");
+
+           if (cleanText !== " " && cleanText !== "" && cleanText !== null && cleanText !== "\n") {
+
+               $('.gojira-content').append('<div class=userMessage><p>' + cleanText + '</p></div>');
+
+               $('.gojira-content').append('<div class=typing-indicator id=gojira-content-typing-indicator><span></span><span></span><span></span></div>');
+               $('.gojira-content').stop().animate({ scrollTop: $('.gojira-content')[0].scrollHeight }, 1000);
+
+               setTimeout(function() {
+                   $('#gojira-content-typing-indicator').remove();
+
+                   $('.gojira-content').append('<div class=backendChat><p>We have received your input! Would you like to elaborate more?</p></div>');
+                   $('.gojira-content').append('<div class=typing-indicator id=gojira-content-typing-indicator><span></span><span></span><span></span></div>');
+
+                   $('.gojira-content').stop().animate({ scrollTop: $('.gojira-content')[0].scrollHeight }, 1000);
+
+                   setTimeout(function() {
+                       $('#gojira-content-typing-indicator').remove();
+                       $('.gojira-content').append('<div class=backendChat><p>If we implement your input, we might decide to reward you for the same! Kindly enter your name and contact details as well!</p></div>');
+                       $('.gojira-content').stop().animate({ scrollTop: $('.gojira-content')[0].scrollHeight }, 1000);
+                   }, 3000);
+
+               }, 3000);
+           }
+           document.getElementsByClassName('gojira-content')[0].style.height = '90%';
+           document.querySelector(".gojira .inputbar").style.height = '10%';
+           document.querySelector('.gojira #w-input-text').innerText = "";
+       });
+
        $('#g-send').click(function() {
            let textMessage = document.querySelector('.gaming #w-input-text').innerText;
            //var text = $('#html').val();
@@ -14,14 +47,14 @@
                setTimeout(function() {
                    $('#g-content-typing-indicator').remove();
 
-                   $('.g-content').append('<div class=backendChat><p>We have received your input! Would you like to elaborate more?</p></div>');
+                   $('.g-content').append('<div class=backendChat><p>Thank you for your input! Would you like to elaborate more?</p></div>');
                    $('.g-content').append('<div class=typing-indicator id=g-content-typing-indicator><span></span><span></span><span></span></div>');
 
                    $('.g-content').stop().animate({ scrollTop: $('.g-content')[0].scrollHeight }, 1000);
 
                    setTimeout(function() {
                        $('#g-content-typing-indicator').remove();
-                       $('.g-content').append('<div class=backendChat><p>If we implement your input, we might decide to reward you for the same! Kindly enter your name and contact details as well!</p></div>');
+                       $('.g-content').append('<div class=backendChat><p>If we decide to implement your suggestions, we may reward for it! Please also include your name and contact details!</p></div>');
                        $('.g-content').stop().animate({ scrollTop: $('.g-content')[0].scrollHeight }, 1000);
                    }, 3000);
 

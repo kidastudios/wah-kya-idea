@@ -59,14 +59,6 @@
             <img src="Images/App-Store-Logo.png" class="app-store">
             <img src="Images/google-play-store-logo.png" class="play-store">
         </div>
-        <div class="reviews-box-button button-box-2">
-        </div>
-        <div class="reviews-box-button button-box-3">
-            <div></div>
-        </div>
-        <div class="reviews-box-button button-box-4">
-            Wah!
-        </div>
         <div class="search">
             <input id="filter" type="text" placeholder="Search for a topic">
             <span>
@@ -98,6 +90,16 @@
             </script>
         </div>
         <div class="chat_box" id="chat_box">
+            <div class="gojiraBox" id="gojiraBox">
+                <div class="profile_pic">
+                    <i class="bi bi-stars">
+                        <p>Ideas & Suggestions Received</p>
+                    </i>
+                    <!--<img src="Images/Games.jpeg" alt="" class="profile-image rounded-circle">-->
+                </div>
+                <div class="topic1_name">Ideas & Suggestions Received</div>
+            </div>
+
             <div class="box" id="box1">
                 <div class="profile_pic">
                     <i class="bi bi-controller">
@@ -262,7 +264,6 @@
     <div class="rightside">
 
         <div class="MainPageInstructions" id="MainPageInstructions">
-            <img src="Images/start.png" />
         </div>
 
         <div id="myModal" class="modal">
@@ -271,25 +272,175 @@
             <video src="" class="video-content" id="vid01" controls autoplay></video>
         </div>
 
+        <div class="topic1 gojira" id="gojira" style="display:none">
+            <div class="header">
+                <p>Gojira</p>
+            </div>
+            <div class="gojira-content" id="scrollControl">
+                <div class="imgDivBC" style="margin-top: 1.5%;">
+                    <img src="Images/thxMsgRcvd10234.png" id="myImg" onclick="onClick(this)">
+                </div>
+                <div class="userMessage">
+                    <p style="font-weight: 900; padding-bottom: 0; font-size: medium;">AKASH</p>
+                    <p>
+                        Mai logo ke liye gadi chalata. Kuch din pehle mai gadi main ruka tha aur maine ek aadmi ko ek chota sa scooter apne swift main daalte dekha. Agar tum lok dhahane wala scooter bana sakte toh mere jaise log ko aasan hoga ek jagah se doosre jagah jaane ke
+                        liye
+                    </p>
+                </div>
+                <div class="userMessage" style="margin-top: 5px;">
+                    <p style="font-weight: 900; padding-bottom: 0; font-size: medium;">राजेश</p>
+                    <p>
+                        मेरा एक पान का दुकान है और रोज लोग आकर वहाँ बात करते है. आज तीन लोग एक सस्ता कैमरा के बारे मे बात करे थे जिससे मेरे जैसे छोटे दूकान पे नज़र रख सकते ताकि कोई चोरी ना करे जब दूकान छोड़के जाना पड़े
+                    </p>
+                </div>
+                <div class="userMessage" style="margin-top: 5px;">
+                    <p style="font-weight: 900; padding-bottom: 0; font-size: medium;">PUNEET</p>
+                    <p>
+                        I submitted a few game suggestions. I wish y'all worked on it and got it made. Looking forward to them. I really hope ya'll work on it!
+                    </p>
+                </div>
+                <div class="userMessage" style="margin-top: 5px;">
+                    <p style="font-weight: 900; padding-bottom: 0; font-size: medium;">SUNDAR</p>
+                    <p>
+                        I am an Indian by birth but I stay in the US. Daily i miss pure desi food. I wish there was a platform via which i can order food from india and get it. I am really tired of packaged indian food.
+                    </p>
+                </div>
+                <div class="backendChat">
+                    <p>
+                        It certainly doesn't end here!
+                    </p>
+                </div>
+                <div class="backendChat">
+                    <p>
+                        We've got a few audios and images to show you as well!
+                    </p>
+                </div>
+            </div>
+
+            <div class="inputbar">
+
+                <button class="attach" id="attach">
+                    <span data-testid="clip" data-icon="clip" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+
+                <div id="upload" style="display:none;">
+
+                    <input class="pic-file" id="gojira" type="file" hidden="hidden" size="30" accept="image/jpg,image/png,image/jpeg,image/gif" />
+                    <p><button type="button" id="custom-picfile" class="custom-picfile" onclick="addImage('gojira')">
+                            <!--<span id="custom-pictext"></span> -->
+                            <i class="bi bi-image-fill"></i>
+                        </button></p>
+                    <input #fileInput type="file" class="real-file" id="gojira-file" hidden="hidden" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                    <p><button type="button" id="custom-file" class="custom-file" onclick="addDoc('gojira-file')" style="border: none;  border-radius: 50%">
+                            <span id="custom-text"></span>
+                            <i class="bi bi-file-earmark"></i>
+
+                        </button></p>
+                    <input #fileInput class="vid-file" id="gojira-video" type="file" hidden="hidden" size="30" accept="video/*" />
+                    <p><button type="button" id="custom-vidfile" class="custom-vidfile" onclick="addVideo('gojira')">
+                            <span id="custom-vidtext"></span>
+                            <i class="bi bi-camera-reels-fill"></i>
+                        </button></p>
+
+                    <input #fileInput class="aud-file" id="gojira-audio" type="file" hidden="hidden" size="30" accept="audio/*" />
+                    <p><button type="button" id="custom-audfile" class="custom-audfile" onclick="addAudio('gojira')" style="border: none; border-radius: 50% ">
+                            <span id="custom-audtext"></span>
+                            <i class="bi bi-music-note"></i>
+
+                        </button></p>
+                </div>
+
+                <div class="container">
+                    <div id="w-input-container" onclick="setFocus()">
+                        <div class="w-input-text-group">
+                            <div id="w-input-text" contenteditable></div>
+                            <div class="w-placeholder">
+                                Type a message
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="record" id="gojira-record" onclick="startRec('gojira')">
+                    <span data-testid="ptt" data-icon="ptt" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+
+                <button class="stopRecord" id="gojira-stopRecord" onclick="stopRec('gojira')">
+                    <i class="bi bi-stop-circle" style="font-size: 30px;"></i>
+                </button>
+
+                <div id="g-volumeBar">
+                    <div id="g-voiceVolume"></div>
+                </div>
+
+                <button type="submit" class="send" id="gojira-send">
+                    <span data-testid="send" data-icon="send" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+
+            </div>
+        </div>
+
         <div class="topic1 gaming" id="1" style="display:none">
             <div class="header">
                 <p>Games</p>
             </div>
             <div class="g-content" id="scrollControl">
-                <div class="backendChat" style="margin-top: 1.5%;">
+                <!--Sample Input Data-->
+                <div class="backendChat" id="gamingExample1" style="margin-top: 1.5%;">
                     <p>
-                        Hey there!
+                        Hello, there!
+                    </p>
+                </div>
+                <div class="backendChat" id="gamingExample2">
+                    <p>
+                        Send us a message describing the game you'd like to play. The game could be a hybrid of two or more games, or it could be something that already exists but you prefer in a different way.
+                    </p>
+                </div>
+                <div class="backendChat" id="gamingExample3">
+                    <p>Text, photographs, audios, videos, and documents are all accepted.
+                    </p>
+                </div>
+                <div class="imgDiv" id="gamingExample4">
+                    <img src="Images/c2FtcGxlR2FtZUlkZWE.jpg" id="myImg" onclick="onClick(this)">
+                </div>
+                <div class="userMessage" id="gamingExample5">
+                    <p>
+                        I had an idea for a game in which the player controls a falling bird. To keep the bird flying and from hitting the ground, an individual must keep tapping it. The main goal of the game is to keep the bird from colliding with any obstacles while collecting
+                        as many coins as possible.
+                    </p>
+                </div>
+                <div class="backendChat" id="gamingExample6">
+                    <p>
+                        Thank you for your valuable idea! If we decide to implement it, we might reward you for it.
+                    </p>
+                </div>
+                <!--Main Input Data-->
+                <div class="backendChat">
+                    <p>
+                        The information above is an example of how you can give us your suggestions.
                     </p>
                 </div>
                 <div class="backendChat">
                     <p>
-                        Send us a message about the type of game you would like to play. The game may be a combination of two or more games or something that already exists but you would like it in a different way.
-                    </p>
-                </div>
-                <div class="backendChat">
-                    <p>
-                        We accept all types of input:
-                        <b>text, images, audios, videos & documents</b>.
+                        Do you have any game suggestions or ideas that you'd like to play?
                     </p>
                 </div>
             </div>
@@ -1270,6 +1421,7 @@
         });
     }
 </script>
+
 <script>
     function onClick(element) {
         var modal = document.getElementById("myModal");

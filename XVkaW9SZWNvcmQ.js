@@ -1,4 +1,38 @@
 $(document).ready(function() {
+    //Gojira
+    var txt = document.querySelector('.gojira #w-input-text');
+    var ibar = document.getElementsByClassName('g-content');
+    txt.addEventListener("input", function() {
+        conHeight = txt.offsetHeight;
+        if (conHeight <= '24' || conHeight == '27') {
+            document.querySelector(".gojira .inputbar").style.height = '10%';
+            ibar[0].style.height = '98%';
+        } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
+            document.querySelector(".gojira .inputbar").style.height = '13%';
+            document.querySelector(".gojira .inputbar .container").style.bottom = '18%';
+            document.querySelector(".gojira .inputbar .attach").style.bottom = '18.5%';
+            document.querySelector(".gojira .inputbar .record").style.bottom = '18.5%';
+            document.querySelector(".gojira .inputbar .stopRecord").style.bottom = '18.5%';
+            document.querySelector(".gojira .inputbar .send").style.bottom = '18.5%';
+            ibar[0].style.height = '98%';
+        } else if (conHeight > '48' && conHeight <= '72') {
+            document.querySelector(".gojira .inputbar").style.height = '16%';
+            document.querySelector(".gojira .inputbar .container").style.bottom = '16%';
+            document.querySelector(".gojira .inputbar .attach").style.bottom = '16.5%';
+            document.querySelector(".gojira .inputbar .record").style.bottom = '16.5%';
+            document.querySelector(".gojira .inputbar .stopRecord").style.bottom = '16.5%';
+            document.querySelector(".gojira .inputbar .send").style.bottom = '16.5%';
+            ibar[0].style.height = '98%';
+        } else if (conHeight > '72') {
+            document.querySelector(".gojira .inputbar").style.height = '18%';
+            document.querySelector(".gojira .inputbar .container").style.bottom = '14%';
+            document.querySelector(".gojira .inputbar .attach").style.bottom = '14.5%';
+            document.querySelector(".gojira .inputbar .record").style.bottom = '14.5%';
+            document.querySelector(".gojira .inputbar .stopRecord").style.bottom = '14.5%';
+            document.querySelector(".gojira .inputbar .send").style.bottom = '14.5%';
+            ibar[0].style.height = '98%';
+        }
+    });
     //games
     var txt = document.querySelector('.gaming #w-input-text');
     var ibar = document.getElementsByClassName('g-content');
