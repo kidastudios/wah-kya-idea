@@ -917,11 +917,10 @@
                     
                     .userMessage>p {
                         padding: 20px;
-                        font-size: 1.7rem;
+                        font-size: medium;
                         margin: 0;
                         word-wrap: break-word;
                         font-family: 'Roboto', sans-serif;
-                        font-weight: 600;
                     }
                     
                     .backendChat::before {
@@ -1612,17 +1611,35 @@ div {
                     }
                     
                     @media screen and (max-width: 1400px) {
-                        #filter {
-                            font-size: small;
-                        }
                         .topic1_name {
                             font-size: small;
                         }
-                        .backendChat>p {
-                            font-size: medium;
+                        .chat_box>div {
+                            height: 67.5px;
                         }
-                        .userMessage>p {
-                            font-size: medium;
+                        .chat_box>div:hover {
+                            height: 67.5px;
+                        }
+                        .profile_pic {
+                            left: 15px;
+                        }
+                        .bi-controller,
+                        .bi-film,
+                        .bi-music-note-list,
+                        .bi-plug,
+                        .bi-palette,
+                        .bi-camera-reels,
+                        .bi-archive,
+                        .bi-cpu-fill,
+                        .bi-hammer,
+                        .bi-bag,
+                        .bi-phone-landscape,
+                        .bi-stars {
+                            font-size: 3.2rem;
+                        }
+                        .topic1_name {
+                            left: 70px;
+                            top: 35px;
                         }
                     }
                     
