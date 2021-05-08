@@ -72,7 +72,7 @@
                         count = 0;
 
                     // Loop through the comment list
-                    $('#chat_box div').each(function() {
+                    $('#chat_box .box').each(function() {
 
                         // If the list item does not contain the text phrase fade it out
                         if ($(this).text().search(new RegExp(filter, "i")) < 0) {
@@ -90,7 +90,7 @@
             </script>
         </div>
         <div class="chat_box" id="chat_box">
-            <div class="gojiraBox" id="gojiraBox">
+            <div class="gojiraBox box" id="gojiraBox">
                 <div class="profile_pic">
                     <i class="bi bi-stars">
                         <p>Ideas & Suggestions Received</p>
@@ -1571,9 +1571,5 @@
         rafID = window.requestAnimationFrame(drawLoop);
     }
 </script>
-<<<<<<< Updated upstream=======< script>
-    /*document.addEventListener('DOMContentLoaded', function() { GreenAudioPlayer.init({ selector: '.player', stopOthersOnPlay: true, enableKeystrokes: true }); });*/
-    </script>
-    >>>>>>> Stashed changes
 
 </html>
