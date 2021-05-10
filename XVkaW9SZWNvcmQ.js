@@ -1,36 +1,36 @@
 $(document).ready(function() {
     //Gojira
     var txt = document.querySelector('.gojira #w-input-text');
-    var ibar = document.getElementsByClassName('g-content');
+    var ibar = document.getElementsByClassName('gojira-content');
     txt.addEventListener("input", function() {
         conHeight = txt.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".gojira .inputbar").style.height = '10%';
-            ibar[0].style.height = '98%';
+            ibar[0].style.height = '90%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".gojira .inputbar").style.height = '13%';
-            document.querySelector(".gojira .inputbar .container").style.bottom = '18%';
-            document.querySelector(".gojira .inputbar .attach").style.bottom = '18.5%';
-            document.querySelector(".gojira .inputbar .record").style.bottom = '18.5%';
-            document.querySelector(".gojira .inputbar .stopRecord").style.bottom = '18.5%';
-            document.querySelector(".gojira .inputbar .send").style.bottom = '18.5%';
-            ibar[0].style.height = '98%';
+            document.querySelector(".gojira .inputbar .container").style.bottom = '0%';
+            document.querySelector(".gojira .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".gojira .inputbar .record").style.bottom = '25%';
+            document.querySelector(".gojira .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".gojira .inputbar .send").style.bottom = '25%';
+            ibar[0].style.height = '90%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".gojira .inputbar").style.height = '16%';
-            document.querySelector(".gojira .inputbar .container").style.bottom = '16%';
-            document.querySelector(".gojira .inputbar .attach").style.bottom = '16.5%';
-            document.querySelector(".gojira .inputbar .record").style.bottom = '16.5%';
-            document.querySelector(".gojira .inputbar .stopRecord").style.bottom = '16.5%';
-            document.querySelector(".gojira .inputbar .send").style.bottom = '16.5%';
-            ibar[0].style.height = '98%';
+            document.querySelector(".gojira .inputbar .container").style.bottom = '0%';
+            document.querySelector(".gojira .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".gojira .inputbar .record").style.bottom = '25%';
+            document.querySelector(".gojira .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".gojira .inputbar .send").style.bottom = '25%';
+            ibar[0].style.height = '90%';
         } else if (conHeight > '72') {
             document.querySelector(".gojira .inputbar").style.height = '18%';
-            document.querySelector(".gojira .inputbar .container").style.bottom = '14%';
-            document.querySelector(".gojira .inputbar .attach").style.bottom = '14.5%';
-            document.querySelector(".gojira .inputbar .record").style.bottom = '14.5%';
-            document.querySelector(".gojira .inputbar .stopRecord").style.bottom = '14.5%';
-            document.querySelector(".gojira .inputbar .send").style.bottom = '14.5%';
-            ibar[0].style.height = '98%';
+            document.querySelector(".gojira .inputbar .container").style.bottom = '0%';
+            document.querySelector(".gojira .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".gojira .inputbar .record").style.bottom = '25%';
+            document.querySelector(".gojira .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".gojira .inputbar .send").style.bottom = '25%';
+            ibar[0].style.height = '90%';
         }
     });
     //games
@@ -40,31 +40,31 @@ $(document).ready(function() {
         conHeight = txt.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".gaming .inputbar").style.height = '10%';
-            ibar[0].style.height = '98%';
+            ibar[0].style.height = '90%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".gaming .inputbar").style.height = '13%';
-            document.querySelector(".gaming .inputbar .container").style.bottom = '18%';
-            document.querySelector(".gaming .inputbar .attach").style.bottom = '18.5%';
-            document.querySelector(".gaming .inputbar .record").style.bottom = '18.5%';
-            document.querySelector(".gaming .inputbar .stopRecord").style.bottom = '18.5%';
-            document.querySelector(".gaming .inputbar .send").style.bottom = '18.5%';
-            ibar[0].style.height = '98%';
+            document.querySelector(".gaming .inputbar .container").style.bottom = '0%';
+            document.querySelector(".gaming .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".gaming .inputbar .record").style.bottom = '25%';
+            document.querySelector(".gaming .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".gaming .inputbar .send").style.bottom = '25%';
+            ibar[0].style.height = '90%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".gaming .inputbar").style.height = '16%';
-            document.querySelector(".gaming .inputbar .container").style.bottom = '16%';
-            document.querySelector(".gaming .inputbar .attach").style.bottom = '16.5%';
-            document.querySelector(".gaming .inputbar .record").style.bottom = '16.5%';
-            document.querySelector(".gaming .inputbar .stopRecord").style.bottom = '16.5%';
-            document.querySelector(".gaming .inputbar .send").style.bottom = '16.5%';
-            ibar[0].style.height = '98%';
+            document.querySelector(".gaming .inputbar .container").style.bottom = '0%';
+            document.querySelector(".gaming .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".gaming .inputbar .record").style.bottom = '25%';
+            document.querySelector(".gaming .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".gaming .inputbar .send").style.bottom = '25%';
+            ibar[0].style.height = '90%';
         } else if (conHeight > '72') {
             document.querySelector(".gaming .inputbar").style.height = '18%';
-            document.querySelector(".gaming .inputbar .container").style.bottom = '14%';
-            document.querySelector(".gaming .inputbar .attach").style.bottom = '14.5%';
-            document.querySelector(".gaming .inputbar .record").style.bottom = '14.5%';
-            document.querySelector(".gaming .inputbar .stopRecord").style.bottom = '14.5%';
-            document.querySelector(".gaming .inputbar .send").style.bottom = '14.5%';
-            ibar[0].style.height = '98%';
+            document.querySelector(".gaming .inputbar .container").style.bottom = '0%';
+            document.querySelector(".gaming .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".gaming .inputbar .record").style.bottom = '25%';
+            document.querySelector(".gaming .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".gaming .inputbar .send").style.bottom = '25%';
+            ibar[0].style.height = '90%';
         }
     });
     //Movies
@@ -74,31 +74,31 @@ $(document).ready(function() {
         conHeight = txt1.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".movies .inputbar").style.height = '10%';
-            ibar1[0].style.height = '98%';
+            ibar1[0].style.height = '90%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".movies .inputbar").style.height = '13%';
-            document.querySelector(".movies .inputbar .container").style.bottom = '18%';
-            document.querySelector(".movies .inputbar .attach").style.bottom = '18.5%';
-            document.querySelector(".movies .inputbar .record").style.bottom = '18.5%';
-            document.querySelector(".movies .inputbar .stopRecord").style.bottom = '18.5%';
-            document.querySelector(".movies .inputbar .send").style.bottom = '18.5%';
-            ibar1[0].style.height = '98%';
+            document.querySelector(".movies .inputbar .container").style.bottom = '0%';
+            document.querySelector(".movies .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".movies .inputbar .record").style.bottom = '25%';
+            document.querySelector(".movies .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".movies .inputbar .send").style.bottom = '25%';
+            ibar1[0].style.height = '90%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".movies .inputbar").style.height = '16%';
-            document.querySelector(".movies .inputbar .container").style.bottom = '16%';
-            document.querySelector(".movies .inputbar .attach").style.bottom = '16.5%';
-            document.querySelector(".movies .inputbar .record").style.bottom = '16.5%';
-            document.querySelector(".movies .inputbar .stopRecord").style.bottom = '16.5%';
-            document.querySelector(".movies .inputbar .send").style.bottom = '16.5%';
-            ibar1[0].style.height = '98%';
+            document.querySelector(".movies .inputbar .container").style.bottom = '0%';
+            document.querySelector(".movies .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".movies .inputbar .record").style.bottom = '25%';
+            document.querySelector(".movies .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".movies .inputbar .send").style.bottom = '25%';
+            ibar1[0].style.height = '90%';
         } else if (conHeight > '72') {
             document.querySelector(".movies .inputbar").style.height = '18%';
-            document.querySelector(".movies .inputbar .container").style.bottom = '14%';
-            document.querySelector(".movies .inputbar .attach").style.bottom = '14.5%';
-            document.querySelector(".movies .inputbar .record").style.bottom = '14.5%';
-            document.querySelector(".movies .inputbar .stopRecord").style.bottom = '14.5%';
-            document.querySelector(".movies .inputbar .send").style.bottom = '14.5%';
-            ibar1[0].style.height = '98%';
+            document.querySelector(".movies .inputbar .container").style.bottom = '0%';
+            document.querySelector(".movies .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".movies .inputbar .record").style.bottom = '25%';
+            document.querySelector(".movies .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".movies .inputbar .send").style.bottom = '25%';
+            ibar1[0].style.height = '90%';
         }
     });
     //Music
@@ -108,16 +108,31 @@ $(document).ready(function() {
         conHeight = txt2.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".music .inputbar").style.height = '10%';
-            iba2r[0].style.height = '98%';
+            iba2r[0].style.height = '90%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".music .inputbar").style.height = '13%';
-            ibar2[0].style.height = '98%';
+            document.querySelector(".music .inputbar .container").style.bottom = '0%';
+            document.querySelector(".music .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".music .inputbar .record").style.bottom = '25%';
+            document.querySelector(".music .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".music .inputbar .send").style.bottom = '25%';
+            ibar2[0].style.height = '90%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".music .inputbar").style.height = '16%';
-            ibar2[0].style.height = '98%';
+            document.querySelector(".music .inputbar .container").style.bottom = '0%';
+            document.querySelector(".music .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".music .inputbar .record").style.bottom = '25%';
+            document.querySelector(".music .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".music .inputbar .send").style.bottom = '25%';
+            ibar2[0].style.height = '90%';
         } else if (conHeight > '72') {
             document.querySelector(".music .inputbar").style.height = '18%';
-            ibar2[0].style.height = '98%';
+            document.querySelector(".music .inputbar .container").style.bottom = '0%';
+            document.querySelector(".music .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".music .inputbar .record").style.bottom = '25%';
+            document.querySelector(".music .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".music .inputbar .send").style.bottom = '25%';
+            ibar2[0].style.height = '90%';
         }
     });
     //Appliances
@@ -127,16 +142,31 @@ $(document).ready(function() {
         conHeight = txt3.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".appliances .inputbar").style.height = '10%';
-            ibar3[0].style.height = '98%';
+            ibar3[0].style.height = '90%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".appliances .inputbar").style.height = '13%';
-            ibar3[0].style.height = '98%';
+            document.querySelector(".appliances .inputbar .container").style.bottom = '0%';
+            document.querySelector(".appliances .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".appliances .inputbar .record").style.bottom = '25%';
+            document.querySelector(".appliances .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".appliances .inputbar .send").style.bottom = '25%';
+            ibar3[0].style.height = '90%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".appliances .inputbar").style.height = '16%';
-            ibar3[0].style.height = '98%';
+            document.querySelector(".appliances .inputbar .container").style.bottom = '0%';
+            document.querySelector(".appliances .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".appliances .inputbar .record").style.bottom = '25%';
+            document.querySelector(".appliances .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".appliances .inputbar .send").style.bottom = '25%';
+            ibar3[0].style.height = '90%';
         } else if (conHeight > '72') {
             document.querySelector(".appliances .inputbar").style.height = '18%';
-            ibar3[0].style.height = '98%';
+            document.querySelector(".appliances .inputbar .container").style.bottom = '0%';
+            document.querySelector(".appliances .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".appliances .inputbar .record").style.bottom = '25%';
+            document.querySelector(".appliances .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".movies .inputbar .send").style.bottom = '25%';
+            ibar3[0].style.height = '90%';
         }
     });
     //Art
@@ -146,16 +176,31 @@ $(document).ready(function() {
         conHeight = txt4.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".art .inputbar").style.height = '10%';
-            ibar4[0].style.height = '98%';
+            ibar4[0].style.height = '90%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".art .inputbar").style.height = '13%';
-            ibar4[0].style.height = '98%';
+            document.querySelector(".art .inputbar .container").style.bottom = '0%';
+            document.querySelector(".art .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".art .inputbar .record").style.bottom = '25%';
+            document.querySelector(".art .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".art .inputbar .send").style.bottom = '25%';
+            ibar4[0].style.height = '90%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".art .inputbar").style.height = '16%';
-            ibar4[0].style.height = '98%';
+            document.querySelector(".art .inputbar .container").style.bottom = '0%';
+            document.querySelector(".art .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".art .inputbar .record").style.bottom = '25%';
+            document.querySelector(".art .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".art .inputbar .send").style.bottom = '25%';
+            ibar4[0].style.height = '90%';
         } else if (conHeight > '72') {
             document.querySelector(".art .inputbar").style.height = '18%';
-            ibar4[0].style.height = '98%';
+            document.querySelector(".art .inputbar .container").style.bottom = '0%';
+            document.querySelector(".art .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".art .inputbar .record").style.bottom = '25%';
+            document.querySelector(".art .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".art .inputbar .send").style.bottom = '25%';
+            ibar4[0].style.height = '90%';
         }
     });
     //Videos
@@ -165,16 +210,31 @@ $(document).ready(function() {
         conHeight = txt5.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".videos .inputbar").style.height = '10%';
-            ibar5[0].style.height = '98%';
+            ibar5[0].style.height = '90%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".videos .inputbar").style.height = '13%';
-            ibar5[0].style.height = '98%';
+            document.querySelector(".videos .inputbar .container").style.bottom = '0%';
+            document.querySelector(".videos .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".videos .inputbar .record").style.bottom = '25%';
+            document.querySelector(".videos .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".videos .inputbar .send").style.bottom = '25%';
+            ibar5[0].style.height = '90%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".videos .inputbar").style.height = '16%';
-            ibar5[0].style.height = '98%';
+            document.querySelector(".videos .inputbar .container").style.bottom = '0%';
+            document.querySelector(".videos .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".videos .inputbar .record").style.bottom = '25%';
+            document.querySelector(".videos .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".videos .inputbar .send").style.bottom = '25%';
+            ibar5[0].style.height = '90%';
         } else if (conHeight > '72') {
             document.querySelector(".videos .inputbar").style.height = '18%';
-            ibar5[0].style.height = '98%';
+            document.querySelector(".videos .inputbar .container").style.bottom = '0%';
+            document.querySelector(".videos .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".videos .inputbar .record").style.bottom = '25%';
+            document.querySelector(".videos .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".videos .inputbar .send").style.bottom = '25%';
+            ibar5[0].style.height = '90%';
         }
     });
     //Others
@@ -184,16 +244,31 @@ $(document).ready(function() {
         conHeight = txt6.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".others .inputbar").style.height = '10%';
-            ibar6[0].style.height = '98%';
+            ibar6[0].style.height = '90%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".others .inputbar").style.height = '13%';
-            ibar6[0].style.height = '98%';
+            document.querySelector(".others .inputbar .container").style.bottom = '0%';
+            document.querySelector(".others .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".others .inputbar .record").style.bottom = '25%';
+            document.querySelector(".others .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".others .inputbar .send").style.bottom = '25%';
+            ibar6[0].style.height = '90%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".others .inputbar").style.height = '16%';
-            ibar6[0].style.height = '98%';
+            document.querySelector(".others .inputbar .container").style.bottom = '0%';
+            document.querySelector(".others .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".others .inputbar .record").style.bottom = '25%';
+            document.querySelector(".others .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".others .inputbar .send").style.bottom = '25%';
+            ibar6[0].style.height = '90%';
         } else if (conHeight > '72') {
             document.querySelector(".others .inputbar").style.height = '18%';
-            ibar6[0].style.height = '98%';
+            document.querySelector(".others .inputbar .container").style.bottom = '0%';
+            document.querySelector(".others .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".others .inputbar .record").style.bottom = '25%';
+            document.querySelector(".others .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".others .inputbar .send").style.bottom = '25%';
+            ibar6[0].style.height = '90%';
         }
     });
     //Technology
@@ -203,16 +278,31 @@ $(document).ready(function() {
         conHeight = txt7.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".technology .inputbar").style.height = '10%';
-            ibar7[0].style.height = '98%';
+            ibar7[0].style.height = '90%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".technology .inputbar").style.height = '13%';
-            ibar7[0].style.height = '98%';
+            document.querySelector(".technology .inputbar .container").style.bottom = '0%';
+            document.querySelector(".technology .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".technology .inputbar .record").style.bottom = '25%';
+            document.querySelector(".technology .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".technology .inputbar .send").style.bottom = '25%';
+            ibar7[0].style.height = '90%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".technology .inputbar").style.height = '16%';
-            ibar7[0].style.height = '98%';
+            document.querySelector(".technology .inputbar .container").style.bottom = '0%';
+            document.querySelector(".technology .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".technology .inputbar .record").style.bottom = '25%';
+            document.querySelector(".technology .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".technology .inputbar .send").style.bottom = '25%';
+            ibar7[0].style.height = '90%';
         } else if (conHeight > '72') {
             document.querySelector(".technology .inputbar").style.height = '18%';
-            ibar7[0].style.height = '98%';
+            document.querySelector(".technology .inputbar .container").style.bottom = '0%';
+            document.querySelector(".technology .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".technology .inputbar .record").style.bottom = '25%';
+            document.querySelector(".technology .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".technology .inputbar .send").style.bottom = '25%';
+            ibar7[0].style.height = '90%';
         }
     });
     //DIY & Crafts
@@ -222,16 +312,31 @@ $(document).ready(function() {
         conHeight = txt8.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".diy-crafts .inputbar").style.height = '10%';
-            ibar8[0].style.height = '98%';
+            ibar8[0].style.height = '90%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".diy-crafts .inputbar").style.height = '13%';
-            ibar8[0].style.height = '98%';
+            document.querySelector(".diy-crafts .inputbar .container").style.bottom = '0%';
+            document.querySelector(".diy-crafts .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".diy-crafts .inputbar .record").style.bottom = '25%';
+            document.querySelector(".diy-crafts .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".diy-crafts .inputbar .send").style.bottom = '25%';
+            ibar8[0].style.height = '90%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".diy-crafts .inputbar").style.height = '16%';
-            ibar8[0].style.height = '98%';
+            document.querySelector(".diy-crafts .inputbar .container").style.bottom = '0%';
+            document.querySelector(".diy-crafts .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".diy-crafts .inputbar .record").style.bottom = '25%';
+            document.querySelector(".diy-crafts .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".diy-crafts .inputbar .send").style.bottom = '25%';
+            ibar8[0].style.height = '90%';
         } else if (conHeight > '72') {
             document.querySelector(".diy-crafts .inputbar").style.height = '18%';
-            ibar8[0].style.height = '98%';
+            document.querySelector(".diy-crafts .inputbar .container").style.bottom = '0%';
+            document.querySelector(".diy-crafts .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".diy-crafts .inputbar .record").style.bottom = '25%';
+            document.querySelector(".diy-crafts .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".diy-crafts .inputbar .send").style.bottom = '25%';
+            ibar8[0].style.height = '90%';
         }
     });
     //Fashion
@@ -241,16 +346,31 @@ $(document).ready(function() {
         conHeight = txt9.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".fashion .inputbar").style.height = '10%';
-            ibar9[0].style.height = '98%';
+            ibar9[0].style.height = '90%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".fashion .inputbar").style.height = '13%';
-            ibar9[0].style.height = '98%';
+            document.querySelector(".fashion .inputbar .container").style.bottom = '0%';
+            document.querySelector(".fashion .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".fashion .inputbar .record").style.bottom = '25%';
+            document.querySelector(".fashion .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".fashion .inputbar .send").style.bottom = '25%';
+            ibar9[0].style.height = '90%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".fashion .inputbar").style.height = '16%';
-            ibar9[0].style.height = '98%';
+            document.querySelector(".fashion .inputbar .container").style.bottom = '0%';
+            document.querySelector(".fashion .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".fashion .inputbar .record").style.bottom = '25%';
+            document.querySelector(".fashion .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".fashion .inputbar .send").style.bottom = '25%';
+            ibar9[0].style.height = '90%';
         } else if (conHeight > '72') {
-            document.querySelector(".fashion .inputbar").style.height = '18%';
-            ibar9[0].style.height = '98%';
+            document.querySelector(".fashion .inputbar").style.height = '0%';
+            document.querySelector(".fashion .inputbar .container").style.bottom = '0%';
+            document.querySelector(".fashion .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".fashion .inputbar .record").style.bottom = '25%';
+            document.querySelector(".fashion .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".fashion .inputbar .send").style.bottom = '25%';
+            ibar9[0].style.height = '90%';
         }
     });
     //Apps & Websites
@@ -260,16 +380,31 @@ $(document).ready(function() {
         conHeight = txt10.offsetHeight;
         if (conHeight <= '24' || conHeight == '27') {
             document.querySelector(".apps-websites .inputbar").style.height = '10%';
-            ibar10[0].style.height = '98%';
+            ibar10[0].style.height = '90%';
         } else if (conHeight > '24' && conHeight <= '48' || conHeight == '54') {
             document.querySelector(".apps-websites .inputbar").style.height = '13%';
-            ibar10[0].style.height = '98%';
+            document.querySelector(".apps-websites .inputbar .container").style.bottom = '0%';
+            document.querySelector(".apps-websites .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".apps-websites .inputbar .record").style.bottom = '25%';
+            document.querySelector(".apps-websites .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".apps-websites .inputbar .send").style.bottom = '25%';
+            ibar10[0].style.height = '90%';
         } else if (conHeight > '48' && conHeight <= '72') {
             document.querySelector(".apps-websites .inputbar").style.height = '16%';
-            ibar10[0].style.height = '98%';
+            document.querySelector(".apps-websites .inputbar .container").style.bottom = '0%';
+            document.querySelector(".apps-websites .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".apps-websites .inputbar .record").style.bottom = '25%';
+            document.querySelector(".apps-websites .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".apps-websites .inputbar .send").style.bottom = '25%';
+            ibar10[0].style.height = '90%';
         } else if (conHeight > '72') {
-            document.querySelector(".apps-websites .inputbar").style.height = '18%';
-            ibar10[0].style.height = '98%';
+            document.querySelector(".apps-websites .inputbar").style.height = '0%';
+            document.querySelector(".apps-websites .inputbar .container").style.bottom = '0%';
+            document.querySelector(".apps-websites .inputbar .attach").style.bottom = '25%';
+            document.querySelector(".apps-websites .inputbar .record").style.bottom = '25%';
+            document.querySelector(".apps-websites .inputbar .stopRecord").style.bottom = '25%';
+            document.querySelector(".apps-websites .inputbar .send").style.bottom = '25%';
+            ibar10[0].style.height = '90%';
         }
     });
 

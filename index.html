@@ -49,15 +49,25 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
     <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
     <title>Form Submission</title>
 </head>
 
 <body>
     <!-- Left Side for Chat page-->
     <div class="leftside">
-        <div class="reviews-box-button button-box-1">
+        <!--<div class="reviews-box-button button-box-1">
             <img src="Images/App-Store-Logo.png" class="app-store">
             <img src="Images/google-play-store-logo.png" class="play-store">
+        </div>-->
+        <div class="left-Top">
+            <img class="logo" src="Images/Wah!.png">
+            <img class="goldcoinImg" src="Images/36-365504_gold-coins-png-cartoon-money-coin-png-transparent.png">
         </div>
         <div class="search">
             <input id="filter" type="text" placeholder="Search for a topic">
@@ -90,22 +100,13 @@
             </script>
         </div>
         <div class="chat_box" id="chat_box">
-            <div class="gojiraBox box" id="gojiraBox">
-                <div class="profile_pic">
-                    <i class="bi bi-stars">
-                        <p>Ideas & Suggestions Received</p>
-                    </i>
-                    <!--<img src="Images/Games.jpeg" alt="" class="profile-image rounded-circle">-->
-                </div>
-                <div class="topic1_name">Ideas & Suggestions Received</div>
-            </div>
 
             <div class="box" id="box1">
                 <div class="profile_pic">
-                    <i class="bi bi-controller">
+                    <!--<i class="bi bi-controller">
                         <p>Games</p>
-                    </i>
-                    <!--<img src="Images/Games.jpeg" alt="" class="profile-image rounded-circle">-->
+                    </i>-->
+                    <img src="Images/Games.jpeg" alt="" class="profile-image">
                 </div>
                 <div class="topic1_name">Games</div>
                 <div class="messageCount" id="messageCount">
@@ -113,12 +114,48 @@
                 </div>
             </div>
 
+            <div class="box" id="box6">
+                <div class="profile_pic">
+                    <!--<i class="bi bi-camera-reels">
+                        <p>youtube channel</p>
+                    </i>-->
+                    <img src="Images/photo-1611162616475-46b635cb6868.jpg" alt="" class="profile-image rounded-circle">
+                </div>
+                <div class="topic1_name">
+                    YouTube Channel
+                </div>
+                <div class="messageCount" id="messageCount">
+                    1
+                </div>
+            </div>
+
+            <!--<div class="colbox box" id="gojiraBox" style="background-color: transparent; border: none;">
+                <div class="profile_pic">
+                    <i class="bi bi-star-fill">
+                        <p>Ideas & Suggestions Received</p>
+                    </i>
+            <!--<img src="Images/Games.jpeg" alt="" class="profile-image rounded-circle">
+        </div>
+        <div class="colbox-left">Contest</div>
+        <div class="colbox-right">Login</div>
+    </div>-->
+
+            <div class="gojiraBox box" id="gojiraBox">
+                <div class="profile_pic">
+                    <!--<i class="bi bi-phone-landscape">
+                        <p>apps & websites</p>
+                    </i>-->
+                    <img src="Images/photo-1589561253898-768105ca91a8.jpg" alt="" class="profile-image rounded-circle">
+                </div>
+                <div class="topic1_name">Some Of The Ideas We've Received</div>
+            </div>
+
             <div class="box" id="box2">
                 <div class="profile_pic">
-                    <i class="bi bi-film">
+                    <!--<i class="bi bi-film">
                         <p>Movies & Shows</p>
-                    </i>
-                    <!--<img src="Images/Movies.jpeg" alt="" class="profile-image rounded-circle">-->
+                    </i>-->
+                    <img src="Images/Movies.jpeg" alt="" class="profile-image rounded-circle">
                 </div>
                 <div class="topic1_name">
                     Movies & Shows
@@ -130,10 +167,10 @@
 
             <div class="box" id="box3">
                 <div class="profile_pic">
-                    <i class="bi bi-music-note-list">
+                    <!--<i class="bi bi-music-note-list">
                         <p>Music</p>
-                    </i>
-                    <!--<img src="Images/Music.jpeg" alt="" class="profile-image rounded-circle">-->
+                    </i>-->
+                    <img src="Images/Music.jpeg" alt="" class="profile-image rounded-circle">
                 </div>
                 <div class="topic1_name">
                     Music
@@ -143,102 +180,12 @@
                 </div>
             </div>
 
-            <div class="box" id="box8">
-                <div class="profile_pic">
-                    <i class="bi bi-cpu-fill">
-                        <p>Technology</p>
-                    </i>
-                    <!--<img src="Images/Miscelleneous.jpeg" alt="" class="profile-image rounded-circle">-->
-                </div>
-                <div class="topic1_name">
-                    Technology
-                </div>
-                <div class="messageCount" id="messageCount">
-                    1
-                </div>
-            </div>
-
-            <div class="box" id="box4">
-                <div class="profile_pic">
-                    <i class="bi bi-plug">
-                        <p>Appliances</p>
-                    </i>
-                    <!--<img src="Images/Appliances.jpeg" alt="" class="profile-image rounded-circle">-->
-                </div>
-                <div class="topic1_name">
-                    Appliances
-                </div>
-                <div class="messageCount" id="messageCount">
-                    1
-                </div>
-            </div>
-
-            <div class="box" id="box5">
-                <div class="profile_pic">
-                    <i class="bi bi-palette">
-                        <p>Art</p>
-                    </i>
-                    <!--<img src="Images/Art.jpeg" alt="" class="profile-image rounded-circle">-->
-                </div>
-                <div class="topic1_name">
-                    Art
-                </div>
-                <div class="messageCount" id="messageCount">
-                    1
-                </div>
-            </div>
-
-            <div class="box" id="box9">
-                <div class="profile_pic">
-                    <i class="bi bi-hammer">
-                        <p>diy & crafts</p>
-                    </i>
-                    <!--<img src="Images/Miscelleneous.jpeg" alt="" class="profile-image rounded-circle">-->
-                </div>
-                <div class="topic1_name">
-                    DIY & Crafts
-                </div>
-                <div class="messageCount" id="messageCount">
-                    1
-                </div>
-            </div>
-
-            <div class="box" id="box10">
-                <div class="profile_pic">
-                    <i class="bi bi-bag">
-                        <p>fashion</p>
-                    </i>
-                    <!--<img src="Images/Miscelleneous.jpeg" alt="" class="profile-image rounded-circle">-->
-                </div>
-                <div class="topic1_name">
-                    Fashion
-                </div>
-                <div class="messageCount" id="messageCount">
-                    1
-                </div>
-            </div>
-
-            <div class="box" id="box6">
-                <div class="profile_pic">
-                    <i class="bi bi-camera-reels">
-                        <p>youtube channel</p>
-                    </i>
-                    <!--<img src="Images/Movies.jpeg" alt="" class="profile-image rounded-circle">-->
-                </div>
-                <div class="topic1_name">
-                    YouTube Channel
-                </div>
-                <div class="messageCount" id="messageCount">
-                    1
-                </div>
-            </div>
-
             <div class="box" id="box11">
                 <div class="profile_pic">
-                    <i class="bi bi-phone-landscape">
+                    <!--<i class="bi bi-phone-landscape">
                         <p>apps & websites</p>
-                    </i>
-                    <!--<img src="Images/Miscelleneous.jpeg" alt="" class="profile-image rounded-circle">-->
+                    </i>-->
+                    <img src="Images/photo-1516259762381-22954d7d3ad2.jpg" alt="" class="profile-image rounded-circle">
                 </div>
                 <div class="topic1_name">
                     Apps & Websites
@@ -248,12 +195,97 @@
                 </div>
             </div>
 
-            <div class="box" id="box7">
+            <div class="gojiraBox box" id="gojiraBox">
                 <div class="profile_pic">
-                    <i class="bi bi-archive">
+                    <!--<i class="bi bi-phone-landscape">
+                        <p>apps & websites</p>
+                    </i>-->
+                    <img src="Images/photo-1586974710160-55f48f417990.jpg" alt="" class="profile-image rounded-circle">
+                </div>
+                <div class="topic1_name">Earn Some Gold Coins</div>
+            </div>
+
+            <div class="box" id="box9">
+                <div class="profile_pic">
+                    <!--<i class="bi bi-hammer">
+                        <p>diy & crafts</p>
+                    </i>-->
+                    <img src="Images/photo-1522065893269-6fd20f6d7438.jpg" alt="" class="profile-image rounded-circle">
+                </div>
+                <div class="topic1_name">
+                    DIY & Crafts
+                </div>
+                <div class="messageCount" id="messageCount">
+                    1
+                </div>
+            </div>
+
+            <div class="box" id="box5">
+                <div class="profile_pic">
+                    <!--<i class="bi bi-palette">
+                        <p>Art</p>
+                    </i>-->
+                    <img src="Images/Art.jpeg" alt="" class="profile-image rounded-circle">
+                </div>
+                <div class="topic1_name">
+                    Art
+                </div>
+                <div class="messageCount" id="messageCount">
+                    1
+                </div>
+            </div>
+
+            <div class="box" id="box4">
+                <div class="profile_pic">
+                    <!--<i class="bi bi-plug">
+                        <p>Appliances</p>
+                    </i>-->
+                    <img src="Images/Appliances.jpeg" alt="" class="profile-image rounded-circle">
+                </div>
+                <div class="topic1_name">
+                    Appliances
+                </div>
+                <div class="messageCount" id="messageCount">
+                    1
+                </div>
+            </div>
+
+            <div class="box" id="box10">
+                <div class="profile_pic">
+                    <!--<i class="bi bi-bag">
+                        <p>fashion</p>
+                    </i>-->
+                    <img src="Images/photo-1509631179647-0177331693ae.jpg" alt="" class="profile-image rounded-circle">
+                </div>
+                <div class="topic1_name">
+                    Fashion
+                </div>
+                <div class="messageCount" id="messageCount">
+                    1
+                </div>
+            </div>
+
+            <div class="box" id="box8">
+                <div class="profile_pic">
+                    <!--<i class="bi bi-cpu-fill">
+                        <p>Technology</p>
+                    </i>-->
+                    <img src="Images/photo-1526666923127-b2970f64b422.jpg" alt="" class="profile-image rounded-circle">
+                </div>
+                <div class="topic1_name">
+                    Technology
+                </div>
+                <div class="messageCount" id="messageCount">
+                    1
+                </div>
+            </div>
+
+            <div class="box" id="box7" style="margin-bottom: 2%;">
+                <div class="profile_pic">
+                    <!--<i class="bi bi-archive">
                         <p>others</p>
-                    </i>
-                    <!--<img src="Images/Miscelleneous.jpeg" alt="" class="profile-image rounded-circle">-->
+                    </i>-->
+                    <img src="Images/Miscelleneous.jpeg" alt="" class="profile-image rounded-circle">
                 </div>
                 <div class="topic1_name">Others</div>
                 <div class="messageCount" id="messageCount">1</div>
@@ -264,6 +296,9 @@
     <div class="rightside">
 
         <div class="MainPageInstructions" id="MainPageInstructions">
+            <div class="headerMainPage" id="headerMainPage">
+
+            </div>
         </div>
 
         <div id="myModal" class="modal">

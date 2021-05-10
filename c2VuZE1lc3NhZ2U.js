@@ -27,8 +27,8 @@
 
                }, 3000);
            }
-           document.getElementsByClassName('gojira-content')[0].style.height = '90%';
-           document.querySelector(".gojira .inputbar").style.height = '10%';
+           document.getElementsByClassName('gojira-content')[0].style.height = '91%';
+           document.querySelector(".gojira .inputbar").style.height = '9%';
            document.querySelector('.gojira #w-input-text').innerText = "";
        });
 
@@ -60,8 +60,8 @@
 
                }, 3000);
            }
-           document.getElementsByClassName('g-content')[0].style.height = '90%';
-           document.querySelector(".gaming .inputbar").style.height = '10%';
+           document.getElementsByClassName('g-content')[0].style.height = '91%';
+           document.querySelector(".gaming .inputbar").style.height = '9%';
            document.querySelector('.gaming #w-input-text').innerText = "";
        });
 
@@ -91,8 +91,8 @@
 
                }, 3000);
            }
-           document.getElementsByClassName('m-content')[0].style.height = '90%';
-           document.querySelector(".music .inputbar").style.height = '10%';
+           document.getElementsByClassName('m-content')[0].style.height = '91%';
+           document.querySelector(".music .inputbar").style.height = '9%';
            document.querySelector('.music #w-input-text').innerText = "";
        });
 
@@ -122,8 +122,8 @@
 
                }, 3000);
            }
-           document.getElementsByClassName('ms-content')[0].style.height = '90%';
-           document.querySelector(".movies .inputbar").style.height = '10%';
+           document.getElementsByClassName('ms-content')[0].style.height = '91%';
+           document.querySelector(".movies .inputbar").style.height = '9%';
            document.querySelector('.movies #w-input-text').innerText = "";
        });
 
@@ -137,8 +137,8 @@
                $('.a-content').append('<div class=backendChat><p>If we implement your input, we might decide to reward you for the same! Kindly enter your name and contact details as well!</p></div>');
                $('.a-content').stop().animate({ scrollTop: $('.a-content')[0].scrollHeight }, 1000);
            }
-           document.getElementsByClassName('a-content')[0].style.height = '82%';
-           document.querySelector(".appliances .inputbar").style.height = '10%';
+           document.getElementsByClassName('a-content')[0].style.height = '91%';
+           document.querySelector(".appliances .inputbar").style.height = '9%';
            document.querySelector('.appliances #w-input-text').innerText = "";
        });
 
@@ -152,8 +152,8 @@
                $('.ac-content').append('<div class=backendChat><p>If we implement your input, we might decide to reward you for the same! Kindly enter your name and contact details as well!</p></div>');
                $('.ac-content').stop().animate({ scrollTop: $('.ac-content')[0].scrollHeight }, 1000);
            }
-           document.getElementsByClassName('ac-content')[0].style.height = '82%';
-           document.querySelector(".art .inputbar").style.height = '10%';
+           document.getElementsByClassName('ac-content')[0].style.height = '91%';
+           document.querySelector(".art .inputbar").style.height = '9%';
            document.querySelector('.art #w-input-text').innerText = "";
        });
 
@@ -167,8 +167,8 @@
                $('.o-content').append('<div class=backendChat><p>If we implement your input, we might decide to reward you for the same! Kindly enter your name and contact details as well!</p></div>');
                $('.o-content').stop().animate({ scrollTop: $('.o-content')[0].scrollHeight }, 1000);
            }
-           document.getElementsByClassName('o-content')[0].style.height = '82%';
-           document.querySelector(".others .inputbar").style.height = '10%';
+           document.getElementsByClassName('o-content')[0].style.height = '91%';
+           document.querySelector(".others .inputbar").style.height = '9%';
            document.querySelector('.others #w-input-text').innerText = "";
        });
        $('#v-send').click(function() {
@@ -181,8 +181,8 @@
                $('.v-content').append('<div class=backendChat><p>If we implement your input, we might decide to reward you for the same! Kindly enter your name and contact details as well!</p></div>');
                $('.v-content').stop().animate({ scrollTop: $('.v-content')[0].scrollHeight }, 1000);
            }
-           document.getElementsByClassName('v-content')[0].style.height = '82%';
-           document.querySelector(".videos .inputbar").style.height = '10%';
+           document.getElementsByClassName('v-content')[0].style.height = '91%';
+           document.querySelector(".videos .inputbar").style.height = '9%';
            document.querySelector('.videos #w-input-text').innerText = "";
        });
        $('#technology-send').click(function() {
@@ -195,8 +195,8 @@
                $('.tech-content').append('<div class=backendChat><p>If we implement your input, we might decide to reward you for the same! Kindly enter your name and contact details as well!</p></div>');
                $('.tech-content').stop().animate({ scrollTop: $('.tech-content')[0].scrollHeight }, 1000);
            }
-           document.getElementsByClassName('tech-content')[0].style.height = '82%';
-           document.querySelector(".technology .inputbar").style.height = '10%';
+           document.getElementsByClassName('tech-content')[0].style.height = '91%';
+           document.querySelector(".technology .inputbar").style.height = '9%';
            document.querySelector('.technology #w-input-text').innerText = "";
        });
        $('#diy-crafts-send').click(function() {
@@ -210,8 +210,8 @@
                $('.diy-crafts-content').append('<div class=backendChat><p>Kindly enter your name and contact details as well!</p></div>');
                $('.diy-crafts-content').stop().animate({ scrollTop: $('.diy-crafts-content')[0].scrollHeight }, 1000);
            }
-           document.getElementsByClassName('diy-crafts-content')[0].style.height = '82%';
-           document.querySelector(".diy-crafts .inputbar").style.height = '10%';
+           document.getElementsByClassName('diy-crafts-content')[0].style.height = '91%';
+           document.querySelector(".diy-crafts .inputbar").style.height = '9%';
            document.querySelector('.diy-crafts #w-input-text').innerText = "";
        });
        $('#fashion-send').click(function() {
@@ -224,8 +224,8 @@
                $('.fashion-content').append('<div class=backendChat><p>If we implement your input, we might decide to reward you for the same! Kindly enter your name and contact details as well!</p></div>');
                $('.fashion-content').stop().animate({ scrollTop: $('.fashion-content')[0].scrollHeight }, 1000);
            }
-           document.getElementsByClassName('fashion-content')[0].style.height = '82%';
-           document.querySelector(".fashion .inputbar").style.height = '10%';
+           document.getElementsByClassName('fashion-content')[0].style.height = '91%';
+           document.querySelector(".fashion .inputbar").style.height = '9%';
            document.querySelector('.fashion #w-input-text').innerText = "";
        });
        $('#apps-websites-send').click(function() {
@@ -238,8 +238,8 @@
                $('.apps-websites-content').append('<div class=backendChat><p>If we implement your input, we might decide to reward you for the same! Kindly enter your name and contact details as well!</p></div>');
                $('.apps-websites-content').stop().animate({ scrollTop: $('.apps-websites-content')[0].scrollHeight }, 1000);
            }
-           document.getElementsByClassName('apps-websites-content')[0].style.height = '82%';
-           document.querySelector(".apps-websites .inputbar").style.height = '10%';
+           document.getElementsByClassName('apps-websites-content')[0].style.height = '91%';
+           document.querySelector(".apps-websites .inputbar").style.height = '9%';
            document.querySelector('.apps-websites #w-input-text').innerText = "";
        });
    });
